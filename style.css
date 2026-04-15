@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&display=swap');
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+html{
+    background-image: url("Assets/Menu/Background-img.png"), url("Assets/Menu/border_dw_titan_base_0.png");
+    background-size: auto auto, 100% 100%;
+    background-position: center, center;
+    background-repeat: no-repeat, no-repeat;
+}
+
+
+body{
+    color:white;
+}
+
+#menu-option-container{
+    width: 50%;
+    aspect-ratio:1 / 1;
+    border-radius:100%;
+    transform: translateX(140%) translateY(20%)
+}
+:nth-child(1) { --nth-child: 1 }
+:nth-child(2) { --nth-child: 2 }
+:nth-child(3) { --nth-child: 3 }
+
+
+.menu-option{
+    left:45%;
+    top:45%;
+    position:absolute;
+    text-align:center;
+    display:flex;
+    justify-content:flex-end;
+    align-items:flex-end;
+    width:25%;
+    height:30%;
+    transform:rotateZ(calc((var(--nth-child))*calc(180/3)*1deg))
+            translateY(200%)
+            rotateZ(calc((var(--nth-child))*calc(180/3)*-1deg))
+            rotateZ(calc((var(--nth-child))*calc(180/3)*1deg))
+            rotateZ(-90deg);
+}
+
+.menu-option:hover {
+    transform:rotateZ(calc((var(--nth-child))*calc(180/3)*1deg))
+            translateY(200%)
+            rotateZ(calc((var(--nth-child))*calc(180/3)*-1deg))
+            rotateZ(calc((var(--nth-child))*calc(180/3)*1deg))
+            rotateZ(-90deg)
+            scale(1.2);
+}
+
+.menu-options{
+    width:100%;
+    height:50%;
+    rotate: -30deg;
+}
+
+div .menu-options .menu-option p{
+    position: absolute;
+  transform: translate(-50%, -50%);
+  font-size: 2em;
+  color: black;
+}
+
+button{
+    background-image: url("Assets/Menu/option-background.gif");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border:none;
+    cursor: pointer;
+    color: black;
+    font-size: 32px;
+    padding: 1.9em 20px;
+}
+
+html, body {
+    font-family: 'Libre Baskerville', serif;
+}
