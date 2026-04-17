@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIGHT FIGHT fight</title>
+    <link rel="stylesheet" href="fight.css">
+</head>
+
+<body>
+    <nav>
+        <button>Fight</button>
+        <button onclick="openInventory()">Inventory</button>
+        <button>Act</button>
+        <button>Spare</button>
+    </nav>
+    
+    <div id="overlayInv">
+        <div class="inventory">
+            <span id="closeInv" onclick="closeInventory()">✖</span>
+            <h2>Inventory</h2>
+            <p>Item01</p>
+            <p>Item02</p>
+            <p>Item03</p>
+            <p>Item04</p>
+        </div>
+    </div>
+    <script src="fight.js"></script>
+</body>
+
+</html>
