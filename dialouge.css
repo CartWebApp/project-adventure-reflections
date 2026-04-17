@@ -17,7 +17,7 @@ html{
 }
 
 #dialouge-container{
-    position: absolute;
+    position: relative;
     bottom: 0;
     width: 100%;
     height: 30%;
@@ -28,11 +28,13 @@ html{
 }
 
 #dialouge-text{
-    position: absolute;
-    top: 30%;
-    left: 45%;
-    transform: translate(-50%, -50%);
-    font-size: 30px;
+    left: 10;
+    position:absolute;
+    text-align: left;
+    top: 100px;
+    width: 100%;
+    font-size: 32px;
+    max-width: 800px;
 }
 
 #dialouge-name{
@@ -52,4 +54,14 @@ p{
     left: 14%;
     width: 30%;
     height: auto;
+}
+
+section{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
