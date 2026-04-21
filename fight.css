@@ -1,30 +1,37 @@
 body {
-    background-image: url(/Assets/Battle/battleround.gif);
-    background-size: contain;
-    background-repeat: repeat;
+  background-image: url(/Assets/Battle/battleround.gif);
+  background-size: contain;
+  background-repeat: repeat;
+}
+
+
+
+#overlayInv {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  display: none;
+  justify-content: center;
+  align-items: center;
 }
 
 #overlayInv {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.6); 
-    display: none; 
-    justify-content: center;
-    align-items: center;
-  }
-  
-#overlayInv {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    width: 300px;
-    text-align: center;
-  }
+  display: flex;
+  background-image: url(/Assets/Battle/box.png);
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  width: 57%;
+  color: aliceblue;
+  text-align: center;
+}
+nav, button {
+  background-image: url(box.png);
+}
+
 #closeInv {
-    cursor: pointer;
-    float: right;
-    font-size: 20px;
-  }
+  cursor: pointer;
+  float: right;
+  font-size: 20px;
+}
