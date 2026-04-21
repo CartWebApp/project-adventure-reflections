@@ -5,3 +5,4 @@ function openInventory() {
 function closeInventory() {
     document.getElementById("overlayInv").style.display = "none";
 }
+
