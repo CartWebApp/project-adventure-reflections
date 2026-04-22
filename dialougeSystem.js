@@ -1,4 +1,6 @@
-let dialouge = [{ dialouge: "Hello!", emotion: "happy", type: "text", person: "Sadie" }, { dialouge: "Sad Hello", emotion: "sad", type: "text", person: "Sadie" }, { dialouge: "You see a trash can, sitting innocently in the corner, potentially hiding the secrets of the universe within its maw. It almost seems to taunt you.", type: "internal-text" }, { dialouge: "Check inside the trash can?", type: "choice", choices: ["HELL YEAH", "No, wtf are you on about??"], results: [{ text: "You give into your urges; the <b>animalistic</b> desire to know what <em>exactly</em> was in that trash can...only to find nothing.", choice: "checkedTrashCan", value: 1 }, { text: "You didnt check the trash can...Good job", choice: "checkedTrashCan", value: 0 }] }];
+// let dialouge = [{ dialouge: "Hello!", emotion: "happy", type: "text", person: "Sadie", location: "club" }, { dialouge: "Sad Hello", emotion: "sad", type: "text", person: "Sadie", location: "room" }, { dialouge: "You see a trash can, sitting innocently in the corner, potentially hiding the secrets of the universe within its maw. It almost seems to taunt you.", type: "internal-text" }, { dialouge: "Check inside the trash can?", type: "choice", choices: ["HELL YEAH", "No, wtf are you on about??", "Third Test Choice"], results: [{ text: "You give into your urges; the <b>animalistic</b> desire to know what <em>exactly</em> was in that trash can...only to find nothing.", choice: "checkedTrashCan", value: 1 }, { text: "You didnt check the trash can...Good job", choice: "checkedTrashCan", value: 0 }] }];
+
+let dialouge = [{ dialouge: "<b>Ring ring ring!</b> The alarm clock reverbs through my ears as the sound reaches my nerves.", type: "internal-text", location: "room"}, {dialouge: "I jolt off of my bed from the ringing and mess up my hair.", type: "internal-text", location: "room"}, { dialouge: "<em>“Ouch… that hurt…”</em>", type: "internal-text", location: "room"}, { dialouge: "I sit up calmly and stretch all my limbs before I get up.", type: "internal-text", location: "room"}, { dialouge: "“Yuma! Come downstairs and eat your breakfast before you leave!”", type: "text", location: "room", person: "Mom", emotion: "happy"}, {dialouge: "My mom’s voice echoes from downstairs and up into my room.", type: "internal-text", location: "room"}, { dialouge: "“Yeah, yeah, I’m coming.” I said.", type: "internal-text", location: "room"}, {dialouge: "I change into my school uniform before heading downstairs and look in the mirror.", type: "internal-text", location: "room"}, { dialouge: "", type: "choice", location: "room", choices: ["Look in the mirror and reflect before you go", "Step away calmly and go", "Turn away abruptly and go"], results: [{ text: "“This is me… right?”", choice: "mirror", value: "lookedIn" }, { text: "“I don’t want to be late. I should go.”", choice: "mirror", value: "steppedCalmly"},{ text: "““No need to look.”", choice: "mirror", value: "turnedAbruptly    "} ] }];
 
 
 import "https://unpkg.com/typewriter-effect@latest/dist/core.js"; 
@@ -36,49 +38,38 @@ const state = {
 function changeImage() {
     let emotion = dialouge[0].emotion;
     let type = dialouge[0].type;
+    let person = dialouge[0].person;
     if (type === "internal-text") {
         document.getElementById("character-image").style = "display: none;";
         console.log("Image changed");
     }
-    else if (type === "text") {
-        if (emotion === "happy") {
-            document.getElementById("character-image").src = "Assets/Dialouge/CharacterPortraitHO.png";
-            document.getElementById("character-image").style = "display: block;";
-            console.log("Image changed");
-        } else if (emotion === "sad") {
-            document.getElementById("character-image").src = "Assets/Dialouge/CharacterPortraitSO.png";
-            document.getElementById("character-image").style = "display: block;";
-            console.log("Image changed");
-        }
-    }
-    else if (type === "choice") {
-        document.getElementById("character-image").src = "Assets/Dialouge/MCThink.png";
+    else {
         document.getElementById("character-image").style = "display: block;";
-        document.documentElement.style.setProperty('--portrait-position', '32%');
-        console.log("Image changed");
-        
+        document.getElementById("character-image").src = `Assets/dialouge/${person.toLowerCase()}/${emotion.toLowerCase()}o.png`;
     }
-
-   
-
 }
+
 function changeImageBack() {
-    let type = dialouge[0].emotion;
-    if (type === "happy") {
-        document.getElementById("character-image").src = "Assets/Dialouge/CharacterPortraitH.png";
+    let emotion = dialouge[0].emotion;
+    let type = dialouge[0].type;
+    let person = dialouge[0].person;
+    if (type === "internal-text") {
+        document.getElementById("character-image").style = "display: none;";
         console.log("Image changed");
     }
-    else if (type === "sad") {
-        document.getElementById("character-image").src = "Assets/Dialouge/CharacterPortraitS.png";
-        console.log("Image changed");
+    else {
+        document.getElementById("character-image").style = "display: block;";
+        document.getElementById("character-image").src = `Assets/dialouge/${person.toLowerCase()}/${emotion.toLowerCase()}.png`;
     }
 }
 
-function typeWriter(text) { 
+function typeWriter(text) {
+    let dialougeBackground = "url" + "(" + `Assets/Dialouge/${(text[0].location ?? "club").toLowerCase()}` +  ".png)";
     let choicesDiv = document.getElementById("choices")
     let textbox = document.getElementById("dialouge-text")
     let characterName = document.getElementById("dialouge-name")
     let dialougeBox = document.getElementById("dialouge-box")
+    document.documentElement.style.setProperty('--dialouge-background', dialougeBackground);
     choicesDiv.innerHTML = ""; // Clear previous choices
     //Clear any previous text
     textbox.innerHTML = "";
@@ -89,6 +80,8 @@ function typeWriter(text) {
         document.documentElement.style.setProperty('--gradient', 'rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)');
         dialougeBox.src = "Assets/Dialouge/thinkingcloud.png";
         textbox.style = "text-align: center;"
+        document.getElementById("character-image").src = `Assets/dialouge/MCThink.png`;
+        document.documentElement.style.setProperty('--portrait-position', '34%');
         text[0].choices.forEach(choice => {
             let button = document.createElement("button");
             button.innerText = choice;
@@ -128,6 +121,7 @@ function typeWriter(text) {
 else if (text[0].event === "fight") {
     window.location.href = 'fight.html'
 }
+
 //type out the dialouge property of the first object in the dialouge array
 const typewriter = new Typewriter(document.getElementById('dialouge-text'), {
     loop: false,

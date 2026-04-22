@@ -1,6 +1,7 @@
 :root {
     --gradient: rgba(0, 0, 0, 0), rgba(0, 0, 0, 0);
     --portrait-position: 14%;
+    --dialouge-background: url('');
 }
 
 @font-face {
@@ -22,7 +23,7 @@ body {
 
 
 html {
-    background-image: linear-gradient(var(--gradient)), url('Assets/Dialouge/Club.webp');
+    background-image: linear-gradient(var(--gradient)), var(--dialouge-background);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -89,13 +90,12 @@ section {
 
 #choices {
     position: absolute;
-    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 30%;
-    padding-top: 10%;
+    gap: 5%;
+    padding-top: 5%;
 }
 
 #choices button {
@@ -104,8 +104,8 @@ section {
     background-position: center;
     background-repeat: no-repeat;
     border: none;
-    width: 650px;
-    height: 279px;
+    width: 648px;
+    height: 251px;
     background-color: transparent;
     cursor: pointer;
     font-size: 32px;
