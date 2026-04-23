@@ -1,6 +1,6 @@
 // let dialouge = [{ dialouge: "Hello!", emotion: "happy", type: "text", person: "Sadie", location: "club" }, { dialouge: "Sad Hello", emotion: "sad", type: "text", person: "Sadie", location: "room" }, { dialouge: "You see a trash can, sitting innocently in the corner, potentially hiding the secrets of the universe within its maw. It almost seems to taunt you.", type: "internal-text" }, { dialouge: "Check inside the trash can?", type: "choice", choices: ["HELL YEAH", "No, wtf are you on about??", "Third Test Choice"], results: [{ text: "You give into your urges; the <b>animalistic</b> desire to know what <em>exactly</em> was in that trash can...only to find nothing.", choice: "checkedTrashCan", value: 1 }, { text: "You didnt check the trash can...Good job", choice: "checkedTrashCan", value: 0 }] }];
 
-let dialouge = [{ dialouge: "<b>Ring ring ring!</b> The alarm clock reverbs through my ears as the sound reaches my nerves.", type: "internal-text", location: "room"}, {dialouge: "I jolt off of my bed from the ringing and mess up my hair.", type: "internal-text", location: "room"}, { dialouge: "<em>“Ouch… that hurt…”</em>", type: "internal-text", location: "room"}, { dialouge: "I sit up calmly and stretch all my limbs before I get up.", type: "internal-text", location: "room"}, { dialouge: "“Yuma! Come downstairs and eat your breakfast before you leave!”", type: "text", location: "room", person: "Mom", emotion: "happy"}, {dialouge: "My mom’s voice echoes from downstairs and up into my room.", type: "internal-text", location: "room"}, { dialouge: "“Yeah, yeah, I’m coming.” I said.", type: "internal-text", location: "room"}, {dialouge: "I change into my school uniform before heading downstairs and look in the mirror.", type: "internal-text", location: "room"}, { dialouge: "", type: "choice", location: "room", choices: ["Look in the mirror and reflect before you go", "Step away calmly and go", "Turn away abruptly and go"], results: [{ text: "“This is me… right?”", choice: "mirror", value: "lookedIn" }, { text: "“I don’t want to be late. I should go.”", choice: "mirror", value: "steppedCalmly"},{ text: "““No need to look.”", choice: "mirror", value: "turnedAbruptly    "} ] }];
+let dialouge = [{dialouge: "<b>Ring ring ring!</b>", type: "internal-text", location: "room", box: "e"}, {dialouge: "The alarm clock reverbs through my ears as the sound reaches my nerves. I jolt off of my bed from the ringing and mess up my hair.", type: "internal-text", location: "room"}, { dialouge: "<em>“Ouch… that hurt…”</em>", type: "internal-text", location: "room"}, { dialouge: "I sit up calmly and stretch all my limbs before I get up.", type: "internal-text", location: "room"}, { dialouge: "“Yuma! Come downstairs and eat your breakfast before you leave!”", type: "text", location: "room", person: "Mom", emotion: "happy"}, {dialouge: "My mom’s voice echoes from downstairs and up into my room.", type: "internal-text", location: "room"}, { dialouge: "“Yeah, yeah, I’m coming.” I said.", type: "internal-text", location: "room"}, {dialouge: "I change into my school uniform before heading downstairs and look in the mirror.", type: "internal-text", location: "room"}, { dialouge: "", type: "choice", location: "room", choices: ["Look in the mirror and reflect before you go", "Step away calmly and go", "Turn away abruptly and go"], results: [{ text: "“This is me… right?”", choice: "mirror", value: "lookedIn" }, { text: "“I don’t want to be late. I should go.”", choice: "mirror", value: "steppedCalmly"},{ text: "““No need to look.”", choice: "mirror", value: "turnedAbruptly"} ]}, { dialouge: "I grab a steamy bun from the toaster and head out the door towards the train station.", type: "internal-text", location: "kitchen"}, { dialouge: "The train door opens with sounds rushing in of chatter about this morning and future plans.", type: "internal-text", location: "trainstation"}, { dialouge: "I look around for any open pole to hang onto and wait till I arrive at my destination. What to do…", type: "internal-text", location: "train"}, { dialouge: "Now that I think about it, we’re all just average. No one here, especially on this train, has anything to make them extraordinary.", type: "internal-text", location: "train"}, { dialouge: "We all fit together too well. Like a conglomerate of puzzle pieces. Puzzle pieces that were all shaped to match individually.", type: "internal-text", location: "train"}, {dialouge: "But me… that means I was shaped too. What was I shaped by? Myself or something else? Who even knows…", type: "internal-text", location: "train"}, { dialouge: "Either way, I am not too worried about it.", type: "internal-text", location: "train"}, {dialouge: "<b>Ding!</b>", type: "internal-text", location: "train", box: "e"}, { dialouge: "Either way, I am not too worried about it.", type: "internal-text", location: "train"}];
 
 
 import "https://unpkg.com/typewriter-effect@latest/dist/core.js"; 
@@ -100,17 +100,20 @@ function typeWriter(text) {
                     //push new object into choices array with the choice and value
                     choices.push({ choice: text[0].results[0].choice, value: text[0].results[0].value });
                     localStorage.setItem('choices', JSON.stringify(choices));
-                     // Store the choices array in localStorage
-                    dialouge = dialouge.concat([{ dialouge: "Hello!", emotion: "happy", type: "text", person:"Sadie" }, { dialouge: "You checked the trash can, didn't you?", emotion: "happy", type: "text", person: "Sadie" }, { dialouge: "Wow...you are weird, you know that?", emotion: "happy", type: "text", person: "Sadie"}, {event: "fight"}]);
-                    enterKeyListener = true; // Re-enable the enter key listener after the choice is made
                 }
              else if (this.value == 1) {
                 dialouge[0].dialouge = text[0].results[1].text;
                 dialouge[0].type = "text"; // Change the type to text to prevent the choices from showing again
                 choices.push({ choice: text[0].results[1].choice, value: text[0].results[1].value });
                 localStorage.setItem('choices', JSON.stringify(choices)); // Store the choices array in localStorage
-
             }
+            else if (this.value == 2) {
+                dialouge[0].dialouge = text[0].results[2].text;
+                dialouge[0].type = "text"; // Change the type to text to prevent the choices from showing again
+                choices.push({ choice: text[0].results[2].choice, value: text[0].results[2].value });
+                localStorage.setItem('choices', JSON.stringify(choices)); // Store the choices array in localStorage
+            }
+            enterKeyListener = true; // Re-enable the enter key listener after the choice is made
             typeWriter(dialouge); // Call the typeWriter function again to display the new dialouge
 
         };
@@ -118,8 +121,16 @@ function typeWriter(text) {
         choicesDiv.appendChild(button);
     });
 }
-else if (text[0].event === "fight") {
-    window.location.href = 'fight.html'
+else if (text[0].event) {
+    if (text[0].event === "fight") {
+        window.location.href = 'fight.html'
+    }
+}
+else if (text[0].box){
+    dialougeBox.src = `Assets/Dialouge/Dialougebox${text[0].box.toUpperCase()}.gif`;
+}
+else if (text[0].box === undefined) {
+    dialougeBox.src = "Assets/Dialouge/DialougeboxN.gif";
 }
 
 //type out the dialouge property of the first object in the dialouge array
