@@ -1,7 +1,7 @@
 :root {
     --gradient: rgba(0, 0, 0, 0), rgba(0, 0, 0, 0);
     --portrait-position: 14%;
-    --dialouge-background: url('');
+    --dialogue-background: url('');
 }
 
 @font-face {
@@ -23,7 +23,7 @@ body {
 
 
 html {
-    background-image: linear-gradient(var(--gradient)), var(--dialouge-background);
+    background-image: linear-gradient(var(--gradient)), var(--dialogue-background);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -32,7 +32,7 @@ html {
     margin: 0
 }
 
-#dialouge-container {
+#dialogue-container {
     position: relative;
     bottom: 0;
     width: 100%;
@@ -43,7 +43,7 @@ html {
     align-items: center;
 }
 
-#dialouge-text {
+#dialogue-text {
     left: 10;
     position: absolute;
     text-align: left;
@@ -53,7 +53,7 @@ html {
     max-width: 800px;
 }
 
-#dialouge-name {
+#dialogue-name {
     position: absolute;
     text-align: left;
     width: 100%;
@@ -99,7 +99,7 @@ section {
 }
 
 #choices button {
-    background-image: url('Assets/Dialouge/optionthinkingcloud.png');
+    background-image: url('Assets/Dialogue/optionthinkingcloud.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
