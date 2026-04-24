@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    
+let dialogue = [{dialogue: "<b>Ring ring ring!</b>", type: "internal-text", location: "room", box: "e"}, {dialogue: "The alarm clock reverbs through my ears as the sound reaches my nerves. I jolt off of my bed from the ringing and mess up my hair.", type: "internal-text", location: "room"}, { dialogue: "<em>“Ouch… that hurt…”</em>", type: "internal-text", location: "room"}, { dialogue: "I sit up calmly and stretch all my limbs before I get up.", type: "internal-text", location: "room"}, { dialogue: "“Yuma! Come downstairs and eat your breakfast before you leave!”", type: "text", location: "room", person: "Mom", emotion: "happy"}, {dialogue: "My mom’s voice echoes from downstairs and up into my room.", type: "internal-text", location: "room"}, { dialogue: "“Yeah, yeah, I’m coming.” I said.", type: "internal-text", location: "room"}, {dialogue: "I change into my school uniform before heading downstairs and look in the mirror.", type: "internal-text", location: "room"}, { dialogue: "", type: "choice", location: "room", choices: ["Look in the mirror and reflect before you go", "Step away calmly and go", "Turn away abruptly and go"], results: [{ text: "“This is me… right?”", choice: "mirror", value: "0" }, { text: "“I don’t want to be late. I should go.”", choice: "mirror", value: "1"},{ text: "““No need to look.”", choice: "mirror", value: "2"} ]}, { dialogue: "I grab a steamy bun from the toaster and head out the door towards the train station.", type: "internal-text", location: "kitchen"}, { dialogue: "The train door opens with sounds rushing in of chatter about this morning and future plans.", type: "internal-text", location: "trainstation"}, { dialogue: "I look around for any open pole to hang onto and wait till I arrive at my destination. What to do…", type: "internal-text", location: "train"}, { dialogue: "Now that I think about it, we’re all just average. No one here, especially on this train, has anything to make them extraordinary.", type: "internal-text", location: "train"}, { dialogue: "We all fit together too well. Like a conglomerate of puzzle pieces. Puzzle pieces that were all shaped to match individually.", type: "internal-text", location: "train"}, {dialogue: "But me… that means I was shaped too. What was I shaped by? Myself or something else? Who even knows…", type: "internal-text", location: "train"}, { dialogue: "Either way, I am not too worried about it.", type: "internal-text", location: "train"}, {dialogue: "<b>Ding!</b>", type: "internal-text", location: "train", box: "e"}, { dialogue: "Either way, I am not too worried about it.", type: "internal-text", location: "train"}, {type: "conditional", condition: "mirror", dialogue: {1: "Looked In Mirror", 2: "Didnt Look In Mirror", 3: "Turned Away From Mirror"}}, { dialogue: "Either way, I am not too worried about it.", type: "internal-text", location: "train"}];
+
+document.addEventListener("keydown", function (event) {
+    if (event.key === "Enter") {
+        
+            dialogue.shift(); // Remove the first element of the dialogue array after it's displayed
+            console.log(dialogue);
+    }
+});
+
+</script>
+</html>
