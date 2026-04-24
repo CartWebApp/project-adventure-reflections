@@ -82,11 +82,11 @@ const state = {
     battleOver: false,
     lastIntent: null
 };
-// keeps random number betwene min max range
+// keeps random number betwene min max range like in a limit so stuff like hp cant go below 0 or above max hp
 function clamp(value, min, max) {
     return Math.min(max, Math.max(min, value));
 }
-// random number between a min and max
+// random number between a min and max, mainly used for damagae and stuff
 function roll(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
