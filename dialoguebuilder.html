@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="inputField" placeholder="dialogue">
+    <select id="typeSelect">
+        <option value="normal">Normal</option>
+        <option value="internal-text">internal</option>
+    </select>
+    <select id="speakerSelect">
+        <option value="Akira">Akira</option>
+        <option value="Momo">Momo</option>
+        <option value="Sadie">Sadie</option>
+    </select>
+    <select id="locationSelect">
+        <option value="club">club</option>
+        <option value="room">room</option>
+        <option value="hallways">hallways</option>
+        <option value="train">train</option>
+        <option value="trainstation">train station</option>
+        <option value="kitchen">kitchen</option>
+        <option value="outsideschool">outside school</option>
+    </select>
+</body>
+<script>
+    let inputField = document.getElementById('inputField');
+    let typeSelect = document.getElementById('typeSelect');
+    let speakerSelect = document.getElementById('speakerSelect');
+    let locationSelect = document.getElementById('locationSelect');
+    let dialogue = [];
+
+    document.addEventListener('keydown', function(event) {
+        if (event.key === 'Enter') {
+            let dialogueEntry = {
+                dialogue: inputField.value,
+                type: typeSelect.value,
+                person: speakerSelect.value,
+                location: locationSelect.value
+            };
+            dialogue.push(dialogueEntry);
+            console.log(dialogue);
+            inputField.value = '';
+        }
+        console.log(dialogue.toString());
+    });
+</script>
+</html>
