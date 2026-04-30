@@ -1,17 +1,953 @@
 // let dialogue = [{ dialogue: "Hello!", emotion: "happy", type: "text", person: "Sadie", location: "club" }, { dialogue: "Sad Hello", emotion: "sad", type: "text", person: "Sadie", location: "room" }, { dialogue: "You see a trash can, sitting innocently in the corner, potentially hiding the secrets of the universe within its maw. It almost seems to taunt you.", type: "internal-text" }, { dialogue: "Check inside the trash can?", type: "choice", choices: ["HELL YEAH", "No, wtf are you on about??", "Third Test Choice"], results: [{ text: "You give into your urges; the <b>animalistic</b> desire to know what <em>exactly</em> was in that trash can...only to find nothing.", choice: "checkedTrashCan", value: 1 }, { text: "You didnt check the trash can...Good job", choice: "checkedTrashCan", value: 0 }] }];
 
 
-let dialogue0 = [{dialogue: "“---Kagami!”", type: "internal-text", location: "hallways"}, {dialogue:"I scan through the sea of uniforms until I see her heading my way.", type:"internal-text", location:"hallways"},{dialogue:"She slows down, panting lightly, and puts her hand on her knees to catch her breath before standing back up with a bright smile.", type:"internal-text", location:"hallways"}, {dialogue: "“Good morning… you walk fast, don’t you know that?”", type: "text", person: "sadie", emotion: "happy", location: "hallways"}, {dialogue: "Takanaka Aiko. One of my friends, I mean, she’s friends with everyone anyways. I’m not sure why she is talking to me.", type: "internal-text", location: "hallways"}, {dialogue: "“I didn’t think I was,” I replied. “You’re the one running.”", type: "internal-text", location: "hallways"}, {dialogue: "She lets out a quiet laugh, brushing a strand of hair behind her ear.", type: "internal-text", location: "hallways"}, {dialogue: "“I didn’t want to lose you in the crowd… I saw you from the gate,”", type: "text", person: "sadie", emotion: "happy", location: "hallways"}, {dialogue: "She pauses.", type: "internal-text", location: "hallways"}, {dialogue: "“It gets… a bit overwhelming.”", type: "text", person: "sadie", emotion: "sad", location: "hallways"}, {dialogue: "I look around at the students chatting, laughing, moving in groups.", type: "internal-text", location: "hallways"}, {dialogue:"“I understand,”", type:"internal-text", location:"hallways"}, {dialogue:"I pause.", type:"internal-text", location:"hallways"},{dialogue:"“I guess.”", type:"internal-text", location:"hallways"},{dialogue:"There’s a brief pause… not an awkward pause… Okay, maybe a bit awkward. No, probably just quiet. ", type:"internal-text", location:"hallways"},{dialogue:"Aiko lets out a deep sigh. She thinks again before speaking.", type:"internal-text", location:"hallways"},{dialogue:"She presses her fingers before asking.", type:"internal-text", location:"hallways"},{dialogue: "“Hey Kagami, i’m a bit curious…”", type: "text", person: "sadie", emotion: "happy", location: "hallways"},{dialogue:"“Huh? What is it?”", type:"internal-text", location:"hallways"},{dialogue: "“Do you ever feel like everyone has things worked out?”", type: "text", person: "sadie", emotion: "happy", location: "hallways"},{dialogue:"I pause for a moment, thinking about what she said.", type:"internal-text", location:"hallways"},{dialogue:"“I’m not sure if I understand what you’re asking.”", type:"internal-text", location:"hallways"},{dialogue: "“Ah… well I mean. I feel like everyone knows who they are and what they are doing.”", type: "text", person: "sadie", emotion: "happy", location: "hallways"},{dialogue:"She hesitates before speaking up again.", type:"internal-text", location:"hallways"},{dialogue:"“And… I notice that... you’re just following along.”", type: "text", person: "sadie", emotion: "sad", location: "hallways"
-},{dialogue:"Her words linger through my mind. I recall back to the train.", type:"internal-text", location:"hallways"},{dialogue:"“Maybe…” I say. “Or, they are just better at pretending.”", type:"internal-text", location:"hallways"},{dialogue:"“Yeesh, that's harsh.”", type:"text", location:"hallways", person:"sadie", emotion:"happy"},{dialogue: "Aiko clenches her teeth, considering my words for a moment.", location: "hallways", type: "internal-text"},{dialogue: "“I guess that’s a bit comforting.”", type: "text", location: "hallways", person:"sadie", emotion: "happy"},{dialogue: "We start walking towards the building together and head to our lockers to grab our papers out of them.", type: "internal-text", location: "hallways"}, {dialogue: "On our way to class, we spot scattered papers on the floor with someone trying to pick them up. A group of students walk by, ignoring the student.", type: "internal-text", location: "hallways"},{dialogue:"“Hey, I apologize for asking but can you please help me pick up these papers? I might be late to class…”", type: "text", location: "hallways", person:"mom"},{dialogue:"“But, I’ll be late too then…”", person: "sadie", location: "hallways", emotion: "sad", type: "text"},{dialogue:"“...”", person: "sadie", location: "hallways", emotion: "sad", type: "text"}, {dialogue:"“Ah forget it, I’ll help you.”", type: "text", location: "hallways", person: "sadie", emotion: "happy"},{dialogue:"Aiko looks back and smiles apologetically, whispering", location: "hallways", type: "internal-text"},{dialogue:"<em>“Sorry, I have to help.”</em>", type: "text", location: "hallways", person: "sadie", emotion: "happy"},{dialogue:"“You didn’t have to say yes,” I say.", location: "hallways", type: "internal-text"},{dialogue:"“...”", person: "sadie", location: "hallways", emotion: "happy", type: "text"},{dialogue:"“I know…”", type: "text", location: "hallways", person: "sadie", emotion: "happy"}, {dialogue:"Her face… her smile. It doesn’t look right. There’s something about her smile that just doesn’t feel right.", type: "internal-text", location: "hallways"}, {dialogue:"What to do...", type:"choice", location:"hallways", choices: ["Help Aiko", "Help reluctantly", "Stand back and watch."], results: [{ text: "...", choice: "helpStudent", value: 0 }, { text: "...", choice: "helpStudent", value: 1 }, { text: "...", choice: "helpStudent", value: 2 }]}, {type: "branch", condition:"helpStudent", dialouge: [[{dialogue:"I kneel on the floor and pick up papers with her. She looks at me with a faint smile and keeps picking them up as well.", type: "internal-text", location: "hallways"}, {dialogue:"“You didn’t need to… but thank you.”", type: "text", location: "hallways", person: "sadie", emotion: "happy"}, {type: "internal-text", dialogue:"After we picked up the papers, we headed to class together. For some reason, she seemed a bit more happier than usual.", location: "hallways"}], [{dialogue:"I hesitated for a moment before helping her pick up the papers. I kneel down on the ground and pick up papers with her. Obscurely, she stares at my face.", type: "internal-text", location: "hallways"}, {dialogue:"“Your expression… thanks for helping me anyways.”", type: "text", location: "hallways", person: "sadie", emotion:"sad"}, {dialogue:"We headed to class together shortly afterwards. I did help, but it’s not like I wanted to.", type: "internal-text", location: "hallways"}], [{dialogue:"I stood back and just watched them. I feel as if a sharp gaze is piercing through my skull, but no one is actually looking or staring at me. Weird. Afterwards, we headed to class together.", type: "internal-text", location: "hallways"}]]}];
+let dialogue0 = [{
+    dialogue: "“---Kagami!”",
+    type: "internal-text",
+    location: "hallways",
+    box: "e"
+}, {
+    dialogue: "I scan through the sea of uniforms until I see her heading my way.",
+    type: "internal-text",
+    location: "hallways"
+}, {
+    dialogue: "She slows down, panting lightly, and puts her hand on her knees to catch her breath before standing back up with a bright smile.",
+    type: "internal-text",
+    location: "hallways"
+}, {
+    dialogue: "“Good morning… you walk fast, don’t you know that?”",
+    type: "text",
+    person: "Sadie",
+    emotion: "happy",
+    location: "hallways"
+}, {
+    dialogue: "Takanaka Aiko. One of my friends, I mean, she’s friends with everyone anyways. I’m not sure why she is talking to me.",
+    type: "internal-text",
+    location: "hallways"
+}, {
+    dialogue: "“I didn’t think I was,” I replied. “You’re the one running.”",
+    type: "internal-text",
+    location: "hallways"
+}, {
+    dialogue: "She lets out a quiet laugh, brushing a strand of hair behind her ear.",
+    type: "internal-text",
+    location: "hallways"
+}, {
+    dialogue: "“I didn’t want to lose you in the crowd… I saw you from the gate,”",
+    type: "text",
+    person: "Sadie",
+    emotion: "happy",
+    location: "hallways"
+}, {
+    dialogue: "She pauses.",
+    type: "internal-text",
+    location: "hallways"
+}, {
+    dialogue: "“It gets… a bit overwhelming.”",
+    type: "text",
+    person: "Sadie",
+    emotion: "sad",
+    location: "hallways"
+}, {
+    dialogue: "I look around at the students chatting, laughing, moving in groups.",
+    type: "internal-text",
+    location: "hallways"
+}, {
+    dialogue: "“I understand,”",
+    type: "internal-text",
+    location: "hallways"
+}, {
+    dialogue: "I pause.",
+    type: "internal-text",
+    location: "hallways"
+}, {
+    dialogue: "“I guess.”",
+    type: "internal-text",
+    location: "hallways"
+}, {
+    dialogue: "There’s a brief pause… not an awkward pause… Okay, maybe a bit awkward. No, probably just quiet. ",
+    type: "internal-text",
+    location: "hallways"
+}, {
+    dialogue: "Aiko lets out a deep sigh. She thinks again before speaking.",
+    type: "internal-text",
+    location: "hallways"
+}, {
+    dialogue: "She presses her fingers before asking.",
+    type: "internal-text",
+    location: "hallways"
+}, {
+    dialogue: "“Hey Kagami, i’m a bit curious…”",
+    type: "text",
+    person: "Sadie",
+    emotion: "happy",
+    location: "hallways"
+}, {
+    dialogue: "“Huh? What is it?”",
+    type: "internal-text",
+    location: "hallways"
+}, {
+    dialogue: "“Do you ever feel like everyone has things worked out?”",
+    type: "text",
+    person: "Sadie",
+    emotion: "happy",
+    location: "hallways"
+}, {
+    dialogue: "I pause for a moment, thinking about what she said.",
+    type: "internal-text",
+    location: "hallways"
+}, {
+    dialogue: "“I’m not sure if I understand what you’re asking.”",
+    type: "internal-text",
+    location: "hallways"
+}, {
+    dialogue: "“Ah… well I mean. I feel like everyone knows who they are and what they are doing.”",
+    type: "text",
+    person: "Sadie",
+    emotion: "happy",
+    location: "hallways"
+}, {
+    dialogue: "She hesitates before speaking up again.",
+    type: "internal-text",
+    location: "hallways"
+}, {
+    dialogue: "“And… I notice that... you’re just following along.”",
+    type: "text",
+    person: "Sadie",
+    emotion: "sad",
+    location: "hallways"
+}, {
+    dialogue: "Her words linger through my mind. I recall back to the train.",
+    type: "internal-text",
+    location: "hallways"
+}, {
+    dialogue: "“Maybe…” I say. “Or, they are just better at pretending.”",
+    type: "internal-text",
+    location: "hallways"
+}, {
+    dialogue: "“Yeesh, that's harsh.”",
+    type: "text",
+    location: "hallways",
+    person: "Sadie",
+    emotion: "happy"
+}, {
+    dialogue: "Aiko clenches her teeth, considering my words for a moment.",
+    location: "hallways",
+    type: "internal-text"
+}, {
+    dialogue: "“I guess that’s a bit comforting.”",
+    type: "text",
+    location: "hallways",
+    person: "Sadie",
+    emotion: "happy"
+}, {
+    dialogue: "We start walking towards the building together and head to our lockers to grab our papers out of them.",
+    type: "internal-text",
+    location: "hallways"
+}, {
+    dialogue: "On our way to class, we spot scattered papers on the floor with someone trying to pick them up. A group of students walk by, ignoring the student.",
+    type: "internal-text",
+    location: "hallways"
+}, {
+    dialogue: "“Hey, I apologize for asking but can you please help me pick up these papers? I might be late to class…”",
+    type: "text",
+    location: "hallways",
+    person: "mom"
+}, {
+    dialogue: "“But, I’ll be late too then…”",
+    person: "Sadie",
+    location: "hallways",
+    emotion: "sad",
+    type: "text"
+}, {
+    dialogue: "“...”",
+    person: "Sadie",
+    location: "hallways",
+    emotion: "sad",
+    type: "text"
+}, {
+    dialogue: "“Ah forget it, I’ll help you.”",
+    type: "text",
+    location: "hallways",
+    person: "Sadie",
+    emotion: "happy"
+}, {
+    dialogue: "Aiko looks back and smiles apologetically, whispering",
+    location: "hallways",
+    type: "internal-text"
+}, {
+    dialogue: "<em>“Sorry, I have to help.”</em>",
+    type: "text",
+    location: "hallways",
+    person: "Sadie",
+    emotion: "happy"
+}, {
+    dialogue: "“You didn’t have to say yes,” I say.",
+    location: "hallways",
+    type: "internal-text"
+}, {
+    dialogue: "“...”",
+    person: "Sadie",
+    location: "hallways",
+    emotion: "happy",
+    type: "text"
+}, {
+    dialogue: "“I know…”",
+    type: "text",
+    location: "hallways",
+    person: "Sadie",
+    emotion: "happy"
+}, {
+    dialogue: "Her face… her smile. It doesn’t look right. There’s something about her smile that just doesn’t feel right.",
+    type: "internal-text",
+    location: "hallways"
+}, {
+    dialogue: "What to do...",
+    type: "choice",
+    location: "hallways",
+    choices: ["Help Aiko", "Help reluctantly", "Stand back and watch."],
+    results: [{
+        text: "...",
+        choice: "helpStudent",
+        value: 0
+    }, {
+        text: "...",
+        choice: "helpStudent",
+        value: 1
+    }, {
+        text: "...",
+        choice: "helpStudent",
+        value: 2
+    }]
+}, {
+    type: "branch",
+    condition: "helpStudent",
+    dialouge: [
+        [{
+            dialogue: "I kneel on the floor and pick up papers with her. She looks at me with a faint smile and keeps picking them up as well.",
+            type: "internal-text",
+            location: "hallways"
+        }, {
+            dialogue: "“You didn’t need to… but thank you.”",
+            type: "text",
+            location: "hallways",
+            person: "Sadie",
+            emotion: "happy"
+        }, {
+            type: "internal-text",
+            dialogue: "After we picked up the papers, we headed to class together. For some reason, she seemed a bit more happier than usual.",
+            location: "hallways"
+        }, {
+            event:"endofDemo"
+        }],
+        [{
+            dialogue: "I hesitated for a moment before helping her pick up the papers. I kneel down on the ground and pick up papers with her. Obscurely, she stares at my face.",
+            type: "internal-text",
+            location: "hallways"
+        }, {
+            dialogue: "“Your expression… thanks for helping me anyways.”",
+            type: "text",
+            location: "hallways",
+            person: "Sadie",
+            emotion: "sad"
+        }, {
+            dialogue: "We headed to class together shortly afterwards. I did help, but it’s not like I wanted to.",
+            type: "internal-text",
+            location: "hallways"
+        }, {
+            event:"endofDemo"
+        }],
+        [{
+            dialogue: "I stood back and just watched them. I feel as if a sharp gaze is piercing through my skull, but no one is actually looking or staring at me. Weird. Afterwards, we headed to class together.",
+            type: "internal-text",
+            location: "hallways"
+        },
+        {
+            event:"endofDemo"
+        }
+        
+    ]
+    ]
+}];
 
 
-let dialogue1 = [{dialogue: "I head inside and grab my lockers before heading into hallways to enter the classroom.", type: "internal-text", location: "hallways"}, {dialogue:"“...Yuma!”", type:"internal-text", location:"hallways"},{dialogue:"The voice cuts through the loud chatters of the hallway. It was louder than most, confident too.", type:"internal-text", location:"hallways"}, {dialogue: "I turn around and sure enough, Daichi is already walking towards me, hands in his pockets like he owns everything around him. ", type: "internal-text", location: "hallways"}, {dialogue: "Takanaka Aiko. One of my friends, I mean, she’s friends with everyone anyways. I’m not sure why she is talking to me.", type: "internal-text", location: "hallways"}, {dialogue: "“Dude, what are you doing? We're gonna be late.”", type: "text", location: "hallways", person:"daichi",emotion:"mad"}, {dialogue: "“Uh, I just got here.”", type: "internal-text", location: "hallways"}, {dialogue: "	“Yeah. So move.”", type: "text", person: "daichi", emotion: "mad", location: "hallways"}, {dialogue: "He walks past me without waiting for me. Classic Daichi. For some reason, I follow anyway. Students pass by us, some greet him while some try to avoid him entirely.", type: "internal-text", location: "hallways"}, {dialogue: "“Big day today, you know,”", type: "text", person: "daichi", emotion: "happy", location: "hallways"}, {dialogue: "“What do you mean?”", type: "internal-text", location: "hallways"}, {dialogue:"His gaze pierces at me like I should already know. I stare back in confusion although he looks at me like I’m the stupidest person ever.", type:"internal-text", location:"hallways"}, {dialogue:"“Seriously? Club evaluations. Rankings get updated today.”", type:"text", person:"daichi", emotion: "mad", location:"hallways"},{dialogue:"“...Rankings?”", type:"internal-text", location:"hallways"},{dialogue:"“You seriously don’t pay attention, do you?”", type:"text", location:"hallways", person:"daichi",emotion:"mad"},{dialogue:"<em>Sigh...</em>", type:"text", location:"hallways", person: "daichi", emotion: "mad"},{dialogue:"“Everything is ranked. Academics, athletics, clubs, etc. Do you just not care? You move up, you get recognized. If you don’t, you-”", type:"text", location:"hallways", person:"daichi",emotion:"mad"},{dialogue: "“...”", type: "text", person: "daichi", emotion: "sad", location: "hallways"},{dialogue:"“You’ll fall behind.”", type:"text", location:"hallways", person:"daichi",emotion:"sad"},{dialogue: "“Is that how you see it?” I ask.", type: "internal-text", location: "hallways"},{dialogue:"“That’s how it is… that’s the truth.”", type:"text", location:"hallways",person:"daichi",emotion:"mad"},{dialogue:"Daichi stretches his arms slightly and puts his hands up. Although Daichi may be a bit hardheaded, he’s still got some kind of fire in him.", type:"internal-text", location:"hallways"},{dialogue: "“Anyway...I’m aiming for the top, the tippy top! No point in doing something halfway, you know.", type: "text", person: "daichi", emotion: "happy", location: "hallways"},{dialogue:"“What if you don’t?”", type:"internal-text", location:"hallways"},{dialogue:"“...”", type: "text", person: "daichi", emotion: "mad", location: "hallways"},{dialogue:"He stops walking. The air around him feels still.", type:"internal-text", location:"hallways"},{dialogue:"“I will.”", type:"text", location:"hallways", person:"daichi", emotion:"mad"},{dialogue:"“Yeesh, that's harsh.”", type:"text", location:"hallways", person:"sadie", emotion:"happy"},{dialogue: "Aiko clenches her teeth, considering my words for a moment.", location: "hallways", type: "internal-text"},{dialogue: "“I guess that’s a bit comforting.”", type: "text", location: "hallways", person:"sadie", emotion: "happy"},{dialogue: "We start walking towards the building together and head to our lockers to grab our papers out of them.", type: "internal-text", location: "hallways"}, {dialogue: "On our way to class, we spot scattered papers on the floor with someone trying to pick them up. A group of students walk by, ignoring the student.", type: "internal-text", location: "hallways"},{dialogue:"“Hey, I apologize for asking but can you please help me pick up these papers? I might be late to class…”", type: "text", location: "hallways", person:"mom"},{dialogue:"“But, I’ll be late too then…”", person: "sadie", location: "hallways", emotion: "sad", type: "text"},{dialogue:"“...”", person: "sadie", location: "hallways", emotion: "sad", type: "text"}, {dialogue:"“Ah forget it, I’ll help you.”", type: "text", location: "hallways", person: "sadie", emotion: "happy"},{dialogue:"Aiko looks back and smiles apologetically, whispering", location: "hallways", type: "internal-text"},{dialogue:"<em>“Sorry, I have to help.”</em>", type: "text", location: "hallways", person: "sadie", emotion: "happy"},{dialogue:"“You didn’t have to say yes,” I say.", location: "hallways", type: "internal-text"},{dialogue:"“...”", person: "sadie", location: "hallways", emotion: "happy", type: "text"},{dialogue:"“I know…”", type: "text", location: "hallways", person: "sadie", emotion: "happy"}, {dialogue:"Her face… her smile. It doesn’t look right. There’s something about her smile that just doesn’t feel right.", type: "internal-text", location: "hallways"}, {dialogue:"What to do...", type:"choice", location:"hallways", choices: ["Help Aiko", "Help reluctantly", "Stand back and watch."], results: [{ text: "...", choice: "helpStudent", value: 0 }, { text: "...", choice: "helpStudent", value: 1 }, { text: "...", choice: "helpStudent", value: 2 }]}, {type: "branch", condition:"helpStudent", dialouge: [[{dialogue:"I kneel on the floor and pick up papers with her. She looks at me with a faint smile and keeps picking them up as well.", type: "internal-text", location: "hallways"}, {dialogue:"“You didn’t need to… but thank you.”", type: "text", location: "hallways", person: "sadie", emotion: "happy"}, {type: "internal-text", dialogue:"After we picked up the papers, we headed to class together. For some reason, she seemed a bit more happier than usual.", location: "hallways"}], [{dialogue:"I hesitated for a moment before helping her pick up the papers. I kneel down on the ground and pick up papers with her. Obscurely, she stares at my face.", type: "internal-text", location: "hallways"}, {dialogue:"“Your expression… thanks for helping me anyways.”", type: "text", location: "hallways", person: "sadie", emotion:"sad"}, {dialogue:"We headed to class together shortly afterwards. I did help, but it’s not like I wanted to.", type: "internal-text", location: "hallways"}], [{dialogue:"I stood back and just watched them. I feel as if a sharp gaze is piercing through my skull, but no one is actually looking or staring at me. Weird. Afterwards, we headed to class together.", type: "internal-text", location: "hallways"}]]}];
+let dialogue1 = [{
+    dialogue: "I head inside and grab my lockers before heading into hallways to enter the classroom.",
+    type: "internal-text",
+    location: "hallways"
+}, {
+    dialogue: "“...Yuma!”",
+    type: "internal-text",
+    location: "hallways"
+}, {
+    dialogue: "The voice cuts through the loud chatters of the hallway. It was louder than most, confident too.",
+    type: "internal-text",
+    location: "hallways"
+}, {
+    dialogue: "I turn around and sure enough, Daichi is already walking towards me, hands in his pockets like he owns everything around him. ",
+    type: "internal-text",
+    location: "hallways"
+}, {
+    dialogue: "Takanaka Aiko. One of my friends, I mean, she’s friends with everyone anyways. I’m not sure why she is talking to me.",
+    type: "internal-text",
+    location: "hallways"
+}, {
+    dialogue: "“Dude, what are you doing? We're gonna be late.”",
+    type: "text",
+    location: "hallways",
+    person: "Daichi",
+    emotion: "mad"
+}, {
+    dialogue: "“Uh, I just got here.”",
+    type: "internal-text",
+    location: "hallways"
+}, {
+    dialogue: "	“Yeah. So move.”",
+    type: "text",
+    person: "Daichi",
+    emotion: "mad",
+    location: "hallways"
+}, {
+    dialogue: "He walks past me without waiting for me. Classic Daichi. For some reason, I follow anyway. Students pass by us, some greet him while some try to avoid him entirely.",
+    type: "internal-text",
+    location: "hallways"
+}, {
+    dialogue: "“Big day today, you know,”",
+    type: "text",
+    person: "Daichi",
+    emotion: "happy",
+    location: "hallways"
+}, {
+    dialogue: "“What do you mean?”",
+    type: "internal-text",
+    location: "hallways"
+}, {
+    dialogue: "His gaze pierces at me like I should already know. I stare back in confusion although he looks at me like I’m the stupidest person ever.",
+    type: "internal-text",
+    location: "hallways"
+}, {
+    dialogue: "“Seriously? Club evaluations. Rankings get updated today.”",
+    type: "text",
+    person: "Daichi",
+    emotion: "mad",
+    location: "hallways"
+}, {
+    dialogue: "“...Rankings?”",
+    type: "internal-text",
+    location: "hallways"
+}, {
+    dialogue: "“You seriously don’t pay attention, do you?”",
+    type: "text",
+    location: "hallways",
+    person: "Daichi",
+    emotion: "mad"
+}, {
+    dialogue: "<em>Sigh...</em>",
+    type: "text",
+    location: "hallways",
+    person: "Daichi",
+    emotion: "mad"
+}, {
+    dialogue: "“Everything is ranked. Academics, athletics, clubs, etc. Do you just not care? You move up, you get recognized. If you don’t, you-”",
+    type: "text",
+    location: "hallways",
+    person: "Daichi",
+    emotion: "mad"
+}, {
+    dialogue: "“...”",
+    type: "text",
+    person: "Daichi",
+    emotion: "sad",
+    location: "hallways"
+}, {
+    dialogue: "“You’ll fall behind.”",
+    type: "text",
+    location: "hallways",
+    person: "Daichi",
+    emotion: "sad"
+}, {
+    dialogue: "“Is that how you see it?” I ask.",
+    type: "internal-text",
+    location: "hallways"
+}, {
+    dialogue: "“That’s how it is… that’s the truth.”",
+    type: "text",
+    location: "hallways",
+    person: "Daichi",
+    emotion: "mad"
+}, {
+    dialogue: "Daichi stretches his arms slightly and puts his hands up. Although Daichi may be a bit hardheaded, he’s still got some kind of fire in him.",
+    type: "internal-text",
+    location: "hallways"
+}, {
+    dialogue: "“Anyway...I’m aiming for the top, the tippy top! No point in doing something halfway, you know.",
+    type: "text",
+    person: "Daichi",
+    emotion: "happy",
+    location: "hallways"
+}, {
+    dialogue: "“What if you don’t?”",
+    type: "internal-text",
+    location: "hallways"
+}, {
+    dialogue: "“...”",
+    type: "text",
+    person: "Daichi",
+    emotion: "mad",
+    location: "hallways"
+}, {
+    dialogue: "He stops walking. The air around him feels still.",
+    type: "internal-text",
+    location: "hallways"
+}, {
+    dialogue: "“I will.”",
+    type: "text",
+    location: "hallways",
+    person: "Daichi",
+    emotion: "mad"
+}, {
+    dialogue: "He starts moving again, faster this time. I follow and try to match his speed. He’s not trying to get away from me, but it seems like I just fired him up more.",
+    type: "internal-text",
+    location: "hallways"
+}, {
+    dialogue: "As we turn the corner, the sharp voices coming from two students hit my ears.",
+    location: "hallways",
+    type: "internal-text"
+}, {
+    dialogue: "“You said you’d handle it!”",
+    type: "text",
+    location: "hallways",
+    person: "Student"
+}, {
+    dialogue: "“If you actually did your part, we wouldn’t be in this mess!”",
+    type: "text",
+    location: "hallways",
+    person: "Student"
+}, {
+    dialogue: "Two students stand in the middle of the hall with small groups of students scattered around them, watching the argument. However, no one steps in. At this rate, we won’t be able to get by, and we’ll be late to class.",
+    type: "internal-text",
+    location: "hallways"
+}, {
+    dialogue: "“Damn it! What is your problem? You always do things like this… you blame everyone else for your mistakes!”",
+    type: "text",
+    location: "hallways",
+    person: "Student"
+}, {
+    dialogue: "“Because no one steps up… YOU never step up!”",
+    type: "text",
+    location: "hallways",
+    person: "Student",
+    emotion: "mad"
+}, {
+    dialogue: "Daichi clenches his fist and exhales deeply, and is clearly irritated. Then he steps forward.",
+    type: "internal-text",
+    location: "hallways"
+}, {
+    dialogue: "“Hey.”",
+    type: "text",
+    location: "hallways",
+    person: "Daichi",
+    emotion: "mad"
+}, {
+    dialogue: "Classic Daichi. Both students turn towards him.",
+    type: "internal-text",
+    location: "hallways"
+}, {
+    dialogue: "“What?”",
+    type: "text",
+    location: "hallways",
+    person: "Student",
+    emotion: "mad"
+}, {
+    dialogue: "“ <em>Sigh...</em>Look, if you’re gonna argue, at least make it useful instead of causing an outrage. This just makes you look stupid.”",
+    type: "text",
+    location: "hallways",
+    person: "Daichi",
+    emotion: "mad"
+}, {
+    dialogue: "“This is none of your busi-”",
+    type: "text",
+    location: "hallways",
+    person: "Student"   
+}, {
+    dialogue: "“You’re blocking the hallway, so it is my business now.”",
+    type: "text",
+    location: "hallways",
+    person: "Daichi",
+    emotion: "mad"
+}, {
+    dialogue: "The hallway pauses. Filled with silence. Daichi glances back at me, expecting me to do something.",
+    type: "internal-text",
+    location: "hallways"
+}, {
+    dialogue: "What to do...",
+    type: "choice",
+    location: "hallways",
+    choices: ["Try to calm both sides", "Stay silent", "Back up Daichi"],
+    results: [{
+        text: "...",
+        choice: "daichiFirstChoice",
+        value: 0
+    }, {
+        text: "...",
+        choice: "daichiFirstChoice",
+        value: 1
+    }, {
+        text: "...",
+        choice: "daichiFirstChoice",
+        value: 2
+    }]
+}, {
+    type: "branch",
+    condition: "daichiFirstChoice",
+    dialouge: [
+        [{
+            dialogue: "“Let’s just calm down first, both of you. There’s no need to cause a fuss, especially out here before the beginning of class.”",
+            type: "internal-text",
+            location: "hallways"
+        }, {
+            dialogue: "The students glance at each other and Daichi stares at me. Daichi probably didn’t expect this out of me, but it’s whatever.",
+            type: "internal-text",
+            location: "hallways"
+        }, {
+            type: "internal-text",
+            dialogue: "<em>“Right. Maybe I got a bit overheated too.”</em>",
+            location: "hallways",
+            person: "Daichi",
+            emotion: "sad"
+        }, {
+            dialogue: "The two students sigh and disperse. The crowd slowly disappears and the bell rings, signaling to head to class.",
+            type: "internal-text",
+            location: "hallways"
+        },{
+            event:"endofDemo"
+        }],
+        [{
+            dialogue: "	I stand back, saying nothing. Daichi gives me a look of irritation.",
+            type: "internal-text",
+            location: "hallways"
+        }, {
+            dialogue: "“Alright, alright. Maybe we all got a bit too heated. Let’s all just calm down and leave this conversation for later, alright?”",
+            type: "text",
+            location: "hallways",
+            person: "Daichi",
+            emotion: "mad"
+        }, {
+            dialogue: "The two students sigh and agree to Daichi. They both leave and the crowd slowly disappears. I walk up to Daichi as my classroom is in that direction.",
+            type: "internal-text",
+            location: "hallways"
+        }, {
+            dialogue: "“Couldn’t you have said something?”",
+            person: "Daichi",
+            type: "text",
+            location: "hallways",
+            emotion: "mad"
+        }, {
+            dialogue: "“Ah, I apologize.”",
+            type: "internal-text",
+            location: "hallways"
+        }, {
+            dialogue: "“It’s whatever now.”",
+            person: "Daichi",
+            type: "text",
+            location: "hallways",
+            emotion: "mad"
+        }, {
+            dialogue: "The bell rings, signaling to head to class. We head to class together.",
+            type: "internal-text",
+            location: "hallways   "
+        }, {
+            event:"endofDemo"
+        }],
+        [{
+            dialogue: "I step up and get behind Daichi.",
+            type: "internal-text",
+            location: "hallways"
+        }, {
+            dialogue: "“He’s right, if you’re gonna argue, at least make it useful!”",
+            type: "internal-text",
+            location: "hallways"
+        }, {
+            dialogue: "One of the students clicks their tongue and backs off, but not calmly. They still seemed pretty heated. Daichi smirks faintly at me.",
+            type: "internal-text",
+            location: "hallways"
+        }, {
+            dialogue: "Was that right of me to do? Anyways, the bell rings, signaling to head to class.",
+            type: "internal-text",
+            location: "hallways"
+        }, {
+            event:"endofDemo"
+        }, ]
+    ]
+}];
 
 
-let dialogue2 = [{ dialogue: "Hello!", emotion: "happy", type: "text", person: "Sadie", location: "club" }, { dialogue: "Sad Hello", emotion: "sad", type: "text", person: "Sadie", location: "room" }, { dialogue: "You see a trash can, sitting innocently in the corner, potentially hiding the secrets of the universe within its maw. It almost seems to taunt you.", type: "internal-text" }, { dialogue: "Check inside the trash can?", type: "choice", choices: ["HELL YEAH", "No, wtf are you on about??", "Third Test Choice"], results: [{ text: "You give into your urges; the <b>animalistic</b> desire to know what <em>exactly</em> was in that trash can...only to find nothing.", choice: "checkedTrashCan", value: 1 }, { text: "You didnt check the trash can...Good job", choice: "checkedTrashCan", value: 0 }]}];
+let dialogue2 = [{
+    dialogue: "“---Kagami!”",
+    type: "internal-text",
+    location: "hallways",
+    box: "e"
+}, {
+    dialogue: "I scan through the sea of uniforms until I see her heading my way.",
+    type: "internal-text",
+    location: "hallways"
+}, {
+    dialogue: "She slows down, panting lightly, and puts her hand on her knees to catch her breath before standing back up with a bright smile.",
+    type: "internal-text",
+    location: "hallways"
+}, {
+    dialogue: "“Good morning… you walk fast, don’t you know that?”",
+    type: "text",
+    person: "Sadie",
+    emotion: "happy",
+    location: "hallways"
+}, {
+    dialogue: "Takanaka Aiko. One of my friends, I mean, she’s friends with everyone anyways. I’m not sure why she is talking to me.",
+    type: "internal-text",
+    location: "hallways"
+}, {
+    dialogue: "“I didn’t think I was,” I replied. “You’re the one running.”",
+    type: "internal-text",
+    location: "hallways"
+}, {
+    dialogue: "She lets out a quiet laugh, brushing a strand of hair behind her ear.",
+    type: "internal-text",
+    location: "hallways"
+}, {
+    dialogue: "“I didn’t want to lose you in the crowd… I saw you from the gate,”",
+    type: "text",
+    person: "Sadie",
+    emotion: "happy",
+    location: "hallways"
+}, {
+    dialogue: "She pauses.",
+    type: "internal-text",
+    location: "hallways"
+}, {
+    dialogue: "“It gets… a bit overwhelming.”",
+    type: "text",
+    person: "Sadie",
+    emotion: "sad",
+    location: "hallways"
+}, {
+    dialogue: "I look around at the students chatting, laughing, moving in groups.",
+    type: "internal-text",
+    location: "hallways"
+}, {
+    dialogue: "“I understand,”",
+    type: "internal-text",
+    location: "hallways"
+}, {
+    dialogue: "I pause.",
+    type: "internal-text",
+    location: "hallways"
+}, {
+    dialogue: "“I guess.”",
+    type: "internal-text",
+    location: "hallways"
+}, {
+    dialogue: "There’s a brief pause… not an awkward pause… Okay, maybe a bit awkward. No, probably just quiet. ",
+    type: "internal-text",
+    location: "hallways"
+}, {
+    dialogue: "Aiko lets out a deep sigh. She thinks again before speaking.",
+    type: "internal-text",
+    location: "hallways"
+}, {
+    dialogue: "She presses her fingers before asking.",
+    type: "internal-text",
+    location: "hallways"
+}, {
+    dialogue: "“Hey Kagami, i’m a bit curious…”",
+    type: "text",
+    person: "Sadie",
+    emotion: "happy",
+    location: "hallways"
+}, {
+    dialogue: "“Huh? What is it?”",
+    type: "internal-text",
+    location: "hallways"
+}, {
+    dialogue: "“Do you ever feel like everyone has things worked out?”",
+    type: "text",
+    person: "Sadie",
+    emotion: "happy",
+    location: "hallways"
+}, {
+    dialogue: "I pause for a moment, thinking about what she said.",
+    type: "internal-text",
+    location: "hallways"
+}, {
+    dialogue: "“I’m not sure if I understand what you’re asking.”",
+    type: "internal-text",
+    location: "hallways"
+}, {
+    dialogue: "“Ah… well I mean. I feel like everyone knows who they are and what they are doing.”",
+    type: "text",
+    person: "Sadie",
+    emotion: "happy",
+    location: "hallways"
+}, {
+    dialogue: "She hesitates before speaking up again.",
+    type: "internal-text",
+    location: "hallways"
+}, {
+    dialogue: "“And… I notice that... you’re just following along.”",
+    type: "text",
+    person: "Sadie",
+    emotion: "sad",
+    location: "hallways"
+}, {
+    dialogue: "Her words linger through my mind. I recall back to the train.",
+    type: "internal-text",
+    location: "hallways"
+}, {
+    dialogue: "“Maybe…” I say. “Or, they are just better at pretending.”",
+    type: "internal-text",
+    location: "hallways"
+}, {
+    dialogue: "“Yeesh, that's harsh.”",
+    type: "text",
+    location: "hallways",
+    person: "Sadie",
+    emotion: "happy"
+}, {
+    dialogue: "Aiko clenches her teeth, considering my words for a moment.",
+    location: "hallways",
+    type: "internal-text"
+}, {
+    dialogue: "“I guess that’s a bit comforting.”",
+    type: "text",
+    location: "hallways",
+    person: "Sadie",
+    emotion: "happy"
+}, {
+    dialogue: "We start walking towards the building together and head to our lockers to grab our papers out of them.",
+    type: "internal-text",
+    location: "hallways"
+}, {
+    dialogue: "On our way to class, we spot scattered papers on the floor with someone trying to pick them up. A group of students walk by, ignoring the student.",
+    type: "internal-text",
+    location: "hallways"
+}, {
+    dialogue: "“Hey, I apologize for asking but can you please help me pick up these papers? I might be late to class…”",
+    type: "text",
+    location: "hallways",
+    person: "mom"
+}, {
+    dialogue: "“But, I’ll be late too then…”",
+    person: "Sadie",
+    location: "hallways",
+    emotion: "sad",
+    type: "text"
+}, {
+    dialogue: "“...”",
+    person: "Sadie",
+    location: "hallways",
+    emotion: "sad",
+    type: "text"
+}, {
+    dialogue: "“Ah forget it, I’ll help you.”",
+    type: "text",
+    location: "hallways",
+    person: "Sadie",
+    emotion: "happy"
+}, {
+    dialogue: "Aiko looks back and smiles apologetically, whispering",
+    location: "hallways",
+    type: "internal-text"
+}, {
+    dialogue: "<em>“Sorry, I have to help.”</em>",
+    type: "text",
+    location: "hallways",
+    person: "Sadie",
+    emotion: "happy"
+}, {
+    dialogue: "“You didn’t have to say yes,” I say.",
+    location: "hallways",
+    type: "internal-text"
+}, {
+    dialogue: "“...”",
+    person: "Sadie",
+    location: "hallways",
+    emotion: "happy",
+    type: "text"
+}, {
+    dialogue: "“I know…”",
+    type: "text",
+    location: "hallways",
+    person: "Sadie",
+    emotion: "happy"
+}, {
+    dialogue: "Her face… her smile. It doesn’t look right. There’s something about her smile that just doesn’t feel right.",
+    type: "internal-text",
+    location: "hallways"
+}, {
+    dialogue: "What to do...",
+    type: "choice",
+    location: "hallways",
+    choices: ["Help Aiko", "Help reluctantly", "Stand back and watch."],
+    results: [{
+        text: "...",
+        choice: "helpStudent",
+        value: 0
+    }, {
+        text: "...",
+        choice: "helpStudent",
+        value: 1
+    }, {
+        text: "...",
+        choice: "helpStudent",
+        value: 2
+    }]
+}, {
+    type: "branch",
+    condition: "helpStudent",
+    dialouge: [
+        [{
+            dialogue: "I kneel on the floor and pick up papers with her. She looks at me with a faint smile and keeps picking them up as well.",
+            type: "internal-text",
+            location: "hallways"
+        }, {
+            dialogue: "“You didn’t need to… but thank you.”",
+            type: "text",
+            location: "hallways",
+            person: "Sadie",
+            emotion: "happy"
+        }, {
+            type: "internal-text",
+            dialogue: "After we picked up the papers, we headed to class together. For some reason, she seemed a bit more happier than usual.",
+            location: "hallways"
+        }],
+        [{
+            dialogue: "I hesitated for a moment before helping her pick up the papers. I kneel down on the ground and pick up papers with her. Obscurely, she stares at my face.",
+            type: "internal-text",
+            location: "hallways"
+        }, {
+            dialogue: "“Your expression… thanks for helping me anyways.”",
+            type: "text",
+            location: "hallways",
+            person: "Sadie",
+            emotion: "sad"
+        }, {
+            dialogue: "We headed to class together shortly afterwards. I did help, but it’s not like I wanted to.",
+            type: "internal-text",
+            location: "hallways"
+        }],
+        [{
+            dialogue: "I stood back and just watched them. I feel as if a sharp gaze is piercing through my skull, but no one is actually looking or staring at me. Weird. Afterwards, we headed to class together.",
+            type: "internal-text",
+            location: "hallways"
+        }, {
+            event:"endofDemo"
+        }]
+    ]
+}];
 
 
-let dialogue = [{dialogue: "<b>Ring ring ring!</b>", type: "internal-text", location: "room", box: "e"}, {dialogue: "The alarm clock reverbs through my ears as the sound reaches my nerves. I jolt off of my bed from the ringing and mess up my hair.", type: "internal-text", location: "room"}, { dialogue: "<em>“Ouch… that hurt…”</em>", type: "internal-text", location: "room"}, { dialogue: "I sit up calmly and stretch all my limbs before I get up.", type: "internal-text", location: "room"}, { dialogue: "“Yuma! Come downstairs and eat your breakfast before you leave!”", type: "text", location: "room", person: "Mom", emotion: "happy"}, {dialogue: "My mom’s voice echoes from downstairs and up into my room.", type: "internal-text", location: "room"}, { dialogue: "“Yeah, yeah, I’m coming.” I said.", type: "internal-text", location: "room"}, {dialogue: "I change into my school uniform before heading downstairs and look in the mirror.", type: "internal-text", location: "room"}, { dialogue: "", type: "choice", location: "room", choices: ["Look in the mirror and reflect before you go", "Step away calmly and go", "Turn away abruptly and go"], results: [{ text: "“This is me… right?”", choice: "mirror", value: "0" }, { text: "“I don’t want to be late. I should go.”", choice: "mirror", value: "1"},{ text: "““No need to look.”", choice: "mirror", value: "2"} ]}, { dialogue: "I grab a steamy bun from the toaster and head out the door towards the train station.", type: "internal-text", location: "kitchen"}, { dialogue: "The train door opens with sounds rushing in of chatter about this morning and future plans.", type: "internal-text", location: "trainstation"}, { dialogue: "I look around for any open pole to hang onto and wait till I arrive at my destination. What to do…", type: "internal-text", location: "train"}, { dialogue: "Now that I think about it, we’re all just average. No one here, especially on this train, has anything to make them extraordinary.", type: "internal-text", location: "train"}, { dialogue: "We all fit together too well. Like a conglomerate of puzzle pieces. Puzzle pieces that were all shaped to match individually.", type: "internal-text", location: "train"}, {dialogue: "But me… that means I was shaped too. What was I shaped by? Myself or something else? Who even knows…", type: "internal-text", location: "train"}, { dialogue: "Either way, I am not too worried about it.", type: "internal-text", location: "train"}, {dialogue: "<b>DING</b>", type: "internal-text", location: "train", box:"e"}, {dialogue: "“ Ah, that snapped me out of it.", type: "internal-text", location: "train"}, {dialogue: "“Now arriving at Kagemori Academy…”", type: "internal-text", location: "train"}, {dialogue: "The train door opens, and I walk outside towards the school gate. The chatter amongst the students fills the air as I step through the gate.", type: "internal-text", location:"outsideschool"}, {type: "branch", condition: "mirror", dialouge: [dialogue0, dialogue1, dialogue2]}];
+let dialogue = [{
+    dialogue: "<b>Ring ring ring!</b>",
+    type: "internal-text",
+    location: "room",
+    box: "e"
+}, {
+    dialogue: "The alarm clock reverbs through my ears as the sound reaches my nerves. I jolt off of my bed from the ringing and mess up my hair.",
+    type: "internal-text",
+    location: "room"
+}, {
+    dialogue: "<em>“Ouch… that hurt…”</em>",
+    type: "internal-text",
+    location: "room"
+}, {
+    dialogue: "I sit up calmly and stretch all my limbs before I get up.",
+    type: "internal-text",
+    location: "room"
+}, {
+    dialogue: "“Yuma! Come downstairs and eat your breakfast before you leave!”",
+    type: "text",
+    location: "room",
+    person: "Mom",
+    emotion: "happy"
+}, {
+    dialogue: "My mom’s voice echoes from downstairs and up into my room.",
+    type: "internal-text",
+    location: "room"
+}, {
+    dialogue: "“Yeah, yeah, I’m coming.” I said.",
+    type: "internal-text",
+    location: "room"
+}, {
+    dialogue: "I change into my school uniform before heading downstairs and look in the mirror.",
+    type: "internal-text",
+    location: "room"
+}, {
+    dialogue: "",
+    type: "choice",
+    location: "room",
+    choices: ["Look in the mirror and reflect before you go", "Step away calmly and go", "Turn away abruptly and go"],
+    results: [{
+        text: "“This is me… right?”",
+        choice: "mirror",
+        value: "0"
+    }, {
+        text: "“I don’t want to be late. I should go.”",
+        choice: "mirror",
+        value: "1"
+    }, {
+        text: "““No need to look.”",
+        choice: "mirror",
+        value: "2"
+    }]
+}, {
+    dialogue: "I grab a steamy bun from the toaster and head out the door towards the train station.",
+    type: "internal-text",
+    location: "kitchen"
+}, {
+    dialogue: "The train door opens with sounds rushing in of chatter about this morning and future plans.",
+    type: "internal-text",
+    location: "trainstation"
+}, {
+    dialogue: "I look around for any open pole to hang onto and wait till I arrive at my destination. What to do…",
+    type: "internal-text",
+    location: "train"
+}, {
+    dialogue: "Now that I think about it, we’re all just average. No one here, especially on this train, has anything to make them extraordinary.",
+    type: "internal-text",
+    location: "train"
+}, {
+    dialogue: "We all fit together too well. Like a conglomerate of puzzle pieces. Puzzle pieces that were all shaped to match individually.",
+    type: "internal-text",
+    location: "train"
+}, {
+    dialogue: "But me… that means I was shaped too. What was I shaped by? Myself or something else? Who even knows…",
+    type: "internal-text",
+    location: "train"
+}, {
+    dialogue: "Either way, I am not too worried about it.",
+    type: "internal-text",
+    location: "train"
+}, {
+    dialogue: "<b>DING</b>",
+    type: "internal-text",
+    location: "train",
+    box: "e"
+}, {
+    dialogue: "“ Ah, that snapped me out of it.",
+    type: "internal-text",
+    location: "train"
+}, {
+    dialogue: "“Now arriving at Kagemori Academy…”",
+    type: "internal-text",
+    location: "train"
+}, {
+    dialogue: "The train door opens, and I walk outside towards the school gate. The chatter amongst the students fills the air as I step through the gate.",
+    type: "internal-text",
+    location: "outsideschool"
+}, {
+    type: "branch",
+    condition: "mirror",
+    dialouge: [dialogue0, dialogue1, dialogue2]
+}];
 
 
 
@@ -19,7 +955,7 @@ let dialogue = [{dialogue: "<b>Ring ring ring!</b>", type: "internal-text", loca
 console.log("Dialogue array:", dialogue1);
 
 
-import "https://unpkg.com/typewriter-effect@latest/dist/core.js";    
+import "https://unpkg.com/typewriter-effect@latest/dist/core.js";
 //Usage:
 // Dialogue: What the character says....pretty simple
 // Emotion: Changes the emotion of the character portrait
@@ -35,7 +971,7 @@ if (storedChoices) {
     choices = JSON.parse(storedChoices);
     console.log("Loaded choices from localStorage:", choices);
 
-}   
+}
 
 const state = {
     _isActive: false,
@@ -48,7 +984,9 @@ const state = {
             }, 300); // Change image back 
         }
     },
-    get isActive() { return this._isActive; }
+    get isActive() {
+        return this._isActive;
+    }
 };
 
 
@@ -59,8 +997,7 @@ function changeImage() {
     if (type === "internal-text") {
         document.getElementById("character-image").style = "display: none;";
         console.log("Image changed");
-    }
-    else {
+    } else {
         document.getElementById("character-image").style = "display: block;";
         document.getElementById("character-image").src = `Assets/dialogue/${person.toLowerCase()}/${emotion.toLowerCase()}o.png`;
     }
@@ -73,15 +1010,14 @@ function changeImageBack() {
     if (type === "internal-text") {
         document.getElementById("character-image").style = "display: none;";
         console.log("Image changed");
-    }
-    else {
+    } else {
         document.getElementById("character-image").style = "display: block;";
         document.getElementById("character-image").src = `Assets/dialogue/${person.toLowerCase()}/${emotion.toLowerCase()}.png`;
     }
 }
 
 function typeWriter(text) {
-    let dialogueBackground = "url" + "(" + `Assets/Dialogue/${(text[0].location ?? "club").toLowerCase()}` +  ".png)";
+    let dialogueBackground = "url" + "(" + `Assets/Dialogue/${(text[0].location ?? "club").toLowerCase()}` + ".png)";
     let choicesDiv = document.getElementById("choices")
     let textbox = document.getElementById("dialogue-text")
     let characterName = document.getElementById("dialogue-name")
@@ -102,7 +1038,7 @@ function typeWriter(text) {
         text[0].choices.forEach(choice => {
             let button = document.createElement("button");
             button.innerText = choice;
-            button.onclick = function () {
+            button.onclick = function() {
                 console.log("You chose: " + choice);
                 console.log("Choice index: " + this.value);
                 choicesDiv.innerHTML = ""
@@ -115,61 +1051,68 @@ function typeWriter(text) {
                     dialogue[0].dialogue = text[0].results[0].text;
                     dialogue[0].type = "text"; // Change the type to text to prevent the choices from showing again
                     //push new object into choices array with the choice and value
-                    choices.push({ choice: text[0].results[0].choice, value: text[0].results[0].value });
+                    choices.push({
+                        choice: text[0].results[0].choice,
+                        value: text[0].results[0].value
+                    });
                     localStorage.setItem('choices', JSON.stringify(choices));
+                } else if (this.value == 1) {
+                    dialogue[0].dialogue = text[0].results[1].text;
+                    dialogue[0].type = "text"; // Change the type to text to prevent the choices from showing again
+                    choices.push({
+                        choice: text[0].results[1].choice,
+                        value: text[0].results[1].value
+                    });
+                    localStorage.setItem('choices', JSON.stringify(choices)); // Store the choices array in localStorage
+                } else if (this.value == 2) {
+                    dialogue[0].dialogue = text[0].results[2].text;
+                    dialogue[0].type = "text"; // Change the type to text to prevent the choices from showing again
+                    choices.push({
+                        choice: text[0].results[2].choice,
+                        value: text[0].results[2].value
+                    });
+                    localStorage.setItem('choices', JSON.stringify(choices)); // Store the choices array in localStorage
                 }
-             else if (this.value == 1) {
-                dialogue[0].dialogue = text[0].results[1].text;
-                dialogue[0].type = "text"; // Change the type to text to prevent the choices from showing again
-                choices.push({ choice: text[0].results[1].choice, value: text[0].results[1].value });
-                localStorage.setItem('choices', JSON.stringify(choices)); // Store the choices array in localStorage
-            }
-            else if (this.value == 2) {
-                dialogue[0].dialogue = text[0].results[2].text;
-                dialogue[0].type = "text"; // Change the type to text to prevent the choices from showing again
-                choices.push({ choice: text[0].results[2].choice, value: text[0].results[2].value });
-                localStorage.setItem('choices', JSON.stringify(choices)); // Store the choices array in localStorage
-            }
-            enterKeyListener = true; // Re-enable the enter key listener after the choice is made
-            typeWriter(dialogue); // Call the typeWriter function again to display the new dialogue
+                enterKeyListener = true; // Re-enable the enter key listener after the choice is made
+                typeWriter(dialogue); // Call the typeWriter function again to display the new dialogue
 
-        };
-        button.value = text[0].choices.indexOf(choice);
-        choicesDiv.appendChild(button);
-    });
-}
-else if (text[0].event) {
-    if (text[0].event === "fight") {
-        localStorage.setItem('enemy', JSON.stringify(text[0].enemy)); // Store the enemy data in localStorage to be accessed in the fight scene
-        window.location.href = 'fight.html'
+            };
+            button.value = text[0].choices.indexOf(choice);
+            choicesDiv.appendChild(button);
+        });
+    } else if (text[0].event) {
+        if (text[0].event === "fight") {
+            localStorage.setItem('enemy', JSON.stringify(text[0].enemy)); // Store the enemy data in localStorage to be accessed in the fight scene
+            window.location.href = 'fight.html'
+        }
+        else if (text[0].event === "endofDemo") {
+            window.location.href = 'endofdemo.html'
+        }
+    } else if (text[0].box) {
+        dialogueBox.src = `Assets/Dialogue/Dialoguebox${text[0].box.toUpperCase()}.gif`;
+    } else if (text[0].box === undefined) {
+        dialogueBox.src = "Assets/Dialogue/DialogueboxN.gif";
     }
-}
-else if (text[0].box){
-    dialogueBox.src = `Assets/Dialogue/Dialoguebox${text[0].box.toUpperCase()}.gif`;
-}
-else if (text[0].box === undefined) {
-    dialogueBox.src = "Assets/Dialogue/DialogueboxN.gif";
-}
 
-//type out the dialogue property of the first object in the dialogue array
-const typewriter = new Typewriter(document.getElementById('dialogue-text'), {
-    loop: false,
-    delay: 30,
-  });
+    //type out the dialogue property of the first object in the dialogue array
+    const typewriter = new Typewriter(document.getElementById('dialogue-text'), {
+        loop: false,
+        delay: 30,
+    });
 
-  typewriter
-  .typeString(text[0].dialogue)
-  .start();
+    typewriter
+        .typeString(text[0].dialogue)
+        .start();
 
-  state.isActive = true; // Trigger the image change when the typewriter starts
-  characterName.innerText = text[0].person ? text[0].person : ""; // Set the character name if it exists, otherwise set it to an empty string
+    state.isActive = true; // Trigger the image change when the typewriter starts
+    characterName.innerText = text[0].person ? text[0].person : ""; // Set the character name if it exists, otherwise set it to an empty string
 }
 
 
 
 //wait for enter key, then call the typeWriter function with the dialogue array as an argument
 
-document.addEventListener("keydown", function (event) {
+document.addEventListener("keydown", function(event) {
     if (event.key === "Enter") {
         if (enterKeyListener) {
             dialogue.shift(); // Remove the first element of the dialogue array after it's displayed
@@ -184,9 +1127,8 @@ document.addEventListener("keydown", function (event) {
                 });
                 dialogue[0].dialogue = dialogue[0].dialogue[value];
                 dialogue[0].type = dialogue[0].typeafter; // Change the type to text to prevent the condition from being checked again
-            typeWriter(dialogue);
-            }
-            else if (dialogue[0].type === "branch") {
+                typeWriter(dialogue);
+            } else if (dialogue[0].type === "branch") {
                 let condition = dialogue[0].condition;
                 let value = 0;
                 //Read local storage for the condition
@@ -197,18 +1139,15 @@ document.addEventListener("keydown", function (event) {
                 });
                 dialogue = dialogue[0].dialouge[value]; // Change the dialogue to the new branch of dialogue
                 typeWriter(dialogue);
-            }
-            else {
+            } else {
                 typeWriter(dialogue);
             }
-    }
+        }
     }
     console.log("Current dialogue array:", dialogue);
 });
 
-window.onload = function () {
+window.onload = function() {
     typeWriter(dialogue);
 
 }
-
-
