@@ -21,7 +21,7 @@ let dialogue0 = [{
     emotion: "happy",
     location: "hallways"
 }, {
-    dialogue: "Takanaka Aiko. One of my friends, I mean, she’s friends with everyone anyways. I’m not sure why she is talking to me.",
+    dialogue: "Tanaka Aiko. One of my friends, I mean, she’s friends with everyone anyways. I’m not sure why she is talking to me.",
     type: "internal-text",
     location: "hallways"
 }, {
@@ -69,7 +69,7 @@ let dialogue0 = [{
     type: "internal-text",
     location: "hallways"
 }, {
-    dialogue: "Aiko lets out a deep sigh. She thinks again before speaking.",
+    dialogue: "Sadie lets out a deep sigh. She thinks again before speaking.",
     type: "internal-text",
     location: "hallways"
 }, {
@@ -131,7 +131,7 @@ let dialogue0 = [{
     person: "Sadie",
     emotion: "happy"
 }, {
-    dialogue: "Aiko clenches her teeth, considering my words for a moment.",
+    dialogue: "Sadie clenches her teeth, considering my words for a moment.",
     location: "hallways",
     type: "internal-text"
 }, {
@@ -172,7 +172,7 @@ let dialogue0 = [{
     person: "Sadie",
     emotion: "happy"
 }, {
-    dialogue: "Aiko looks back and smiles apologetically, whispering",
+    dialogue: "Sadie looks back and smiles apologetically, whispering",
     location: "hallways",
     type: "internal-text"
 }, {
@@ -205,7 +205,7 @@ let dialogue0 = [{
     dialogue: "What to do...",
     type: "choice",
     location: "hallways",
-    choices: ["Help Aiko", "Help reluctantly", "Stand back and watch."],
+    choices: ["Help Sadie", "Help reluctantly", "Stand back and watch."],
     results: [{
         text: "...",
         choice: "helpStudent",
@@ -288,7 +288,7 @@ let dialogue1 = [{
     type: "internal-text",
     location: "hallways"
 }, {
-    dialogue: "Takanaka Aiko. One of my friends, I mean, she’s friends with everyone anyways. I’m not sure why she is talking to me.",
+    dialogue: "Takanaka Sadie. One of my friends, I mean, she’s friends with everyone anyways. I’m not sure why she is talking to me.",
     type: "internal-text",
     location: "hallways"
 }, {
@@ -602,7 +602,7 @@ let dialogue2 = [{
     emotion: "happy",
     location: "hallways"
 }, {
-    dialogue: "Takanaka Aiko. One of my friends, I mean, she’s friends with everyone anyways. I’m not sure why she is talking to me.",
+    dialogue: "Takanaka Sadie. One of my friends, I mean, she’s friends with everyone anyways. I’m not sure why she is talking to me.",
     type: "internal-text",
     location: "hallways"
 }, {
@@ -650,7 +650,7 @@ let dialogue2 = [{
     type: "internal-text",
     location: "hallways"
 }, {
-    dialogue: "Aiko lets out a deep sigh. She thinks again before speaking.",
+    dialogue: "Sadie lets out a deep sigh. She thinks again before speaking.",
     type: "internal-text",
     location: "hallways"
 }, {
@@ -712,7 +712,7 @@ let dialogue2 = [{
     person: "Sadie",
     emotion: "happy"
 }, {
-    dialogue: "Aiko clenches her teeth, considering my words for a moment.",
+    dialogue: "Sadie clenches her teeth, considering my words for a moment.",
     location: "hallways",
     type: "internal-text"
 }, {
@@ -753,7 +753,7 @@ let dialogue2 = [{
     person: "Sadie",
     emotion: "happy"
 }, {
-    dialogue: "Aiko looks back and smiles apologetically, whispering",
+    dialogue: "Sadie looks back and smiles apologetically, whispering",
     location: "hallways",
     type: "internal-text"
 }, {
@@ -786,7 +786,7 @@ let dialogue2 = [{
     dialogue: "What to do...",
     type: "choice",
     location: "hallways",
-    choices: ["Help Aiko", "Help reluctantly", "Stand back and watch."],
+    choices: ["Help Sadie", "Help reluctantly", "Stand back and watch."],
     results: [{
         text: "...",
         choice: "helpStudent",
