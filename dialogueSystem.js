@@ -417,12 +417,14 @@ let dialogue1 = [{
     dialogue: "“You said you’d handle it!”",
     type: "text",
     location: "hallways",
-    person: "Student"
+    person: "Student",
+    emotion: "mad"
 }, {
     dialogue: "“If you actually did your part, we wouldn’t be in this mess!”",
     type: "text",
     location: "hallways",
-    person: "Student"
+    person: "Student",
+    emotion: "mad"
 }, {
     dialogue: "Two students stand in the middle of the hall with small groups of students scattered around them, watching the argument. However, no one steps in. At this rate, we won’t be able to get by, and we’ll be late to class.",
     type: "internal-text",
@@ -431,7 +433,8 @@ let dialogue1 = [{
     dialogue: "“Damn it! What is your problem? You always do things like this… you blame everyone else for your mistakes!”",
     type: "text",
     location: "hallways",
-    person: "Student"
+    person: "Student",
+    emotion: "mad"
 }, {
     dialogue: "“Because no one steps up… YOU never step up!”",
     type: "text",
@@ -468,7 +471,8 @@ let dialogue1 = [{
     dialogue: "“This is none of your busi-”",
     type: "text",
     location: "hallways",
-    person: "Student"   
+    person: "Student",
+    emotion: "mad"   
 }, {
     dialogue: "“You’re blocking the hallway, so it is my business now.”",
     type: "text",
@@ -510,11 +514,11 @@ let dialogue1 = [{
             type: "internal-text",
             location: "hallways"
         }, {
-            type: "internal-text",
+            type: "text",
             dialogue: "<em>“Right. Maybe I got a bit overheated too.”</em>",
             location: "hallways",
             person: "Daichi",
-            emotion: "sad"
+            emotion: "mad"
         }, {
             dialogue: "The two students sigh and disperse. The crowd slowly disappears and the bell rings, signaling to head to class.",
             type: "internal-text",
@@ -712,7 +716,7 @@ let dialogue2 = [{
     }]
 }, {
     type: "branch",
-    condition: "helpStudent",
+    condition: "firstMiyuChoice",
     dialouge: [
         [{
             dialogue: "“Hmm…” I think for a moment. “We could say something, speak up for the student so that they could stop.”",
@@ -876,11 +880,7 @@ let dialogue = [{
     location: "train",
     box: "e"
 }, {
-    dialogue: "“ Ah, that snapped me out of it.",
-    type: "internal-text",
-    location: "train"
-}, {
-    dialogue: "“Now arriving at Kagemori Academy…”",
+    dialogue: "“ Ah, that snapped me out of it.”",
     type: "internal-text",
     location: "train"
 }, {
