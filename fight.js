@@ -51,9 +51,9 @@ const party = [
 
 //enemy data in an object similar to party members
 const enemy = {
-    name: "Shadow Sadie",
-    maxHp: 670,
-    hp: 670,
+    name: "Shadow Mateo",
+    maxHp: 250,
+    hp: 250,
     mercy: 0,
     element: document.getElementById("combatant-enemy"),
     hpElement: document.getElementById("hp-enemy"),
@@ -353,7 +353,7 @@ function actOnEnemy(actId) {
     let summary = `${action.name} works. Mercy rises to ${enemy.mercy}%.`;
 
     if (action.id === "check") {
-        summary = `${enemy.name}: 670 HP shell, weak to group attacks, mercy builds fast after encouragement.`;
+        summary = `${enemy.name}: 250 HP shell, weak to group attacks, mercy builds fast after encouragement.`;
     } else if (action.id === "talk") {
         summary = "You try talking her down. The tension softens.";
     } else if (action.id === "encourage") {
