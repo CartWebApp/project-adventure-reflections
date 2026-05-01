@@ -583,9 +583,13 @@ let dialogue1 = [{
 
 
 let dialogue2 = [{
-    dialogue: "As I step onto the rooftop, the wind brushes lightly against my face, with my hair swaying in the wind. I look towards the bars at the edge and listen to the muffled voices of laughter and chatter from the students",
+    dialogue: "As I step onto the rooftop, the wind brushes lightly against my face, with my hair swaying in the wind.",
     type: "internal-text",
     location: "rooftop"
+}, {
+    dialogue:"I look towards the bars at the edge and listen to the muffled voices of laughter and chatter from the students.",
+    type:"internal-text",
+    location:"rooftop"
 }, {
     dialogue: "Students gather at the courtyard, talking, eating, doing their normal lunch time routine. I look back to see if another student is sitting here. Ah, there is. Kageyama Miyu.",
     type: "internal-text",
