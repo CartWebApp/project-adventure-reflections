@@ -687,7 +687,7 @@ let dialogue2 = [{
     type: "internal-text",
     location: "rooftop"
 }, {
-    dialogue: "““It could…Or maybe not. “What do you think?”",
+    dialogue: "“It could…Or maybe not. “What do you think?”",
     type: "text",
     location: "rooftop",
     person:"Miyu",
@@ -979,6 +979,7 @@ function typeWriter(text) {
         textbox.style = "text-align: center;"
         document.getElementById("character-image").src = `Assets/dialogue/MCThink.png`;
         document.documentElement.style.setProperty('--portrait-position', '34%');
+        characterName.innerText = ""; // Clear character name for choices
         text[0].choices.forEach(choice => {
             let button = document.createElement("button");
             button.innerText = choice;
@@ -989,7 +990,7 @@ function typeWriter(text) {
                 textbox.style = "text-align: left;"
                 document.documentElement.style.setProperty('--gradient', 'rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)');
                 dialogueBox.src = "Assets/Dialogue/DialogueboxN.gif";
-                document.documentElement.style.setProperty('--portrait-position', '14%');
+                document.documentElement.style.setProperty('--portrait-position', '17%');
                 //Update the dialogue based on the choice given
                 if (this.value == 0) {
                     dialogue[0].dialogue = text[0].results[0].text;
@@ -1059,6 +1060,7 @@ function typeWriter(text) {
 document.addEventListener("keydown", function(event) {
     if (event.key === "Enter") {
         if (enterKeyListener) {
+            document.documentElement.style.setProperty('--portrait-position', '14%');
             dialogue.shift(); // Remove the first element of the dialogue array after it's displayed
             if (dialogue[0].type === "conditional") {
                 let condition = dialogue[0].condition;

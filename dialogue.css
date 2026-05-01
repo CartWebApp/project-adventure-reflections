@@ -60,6 +60,7 @@ html {
     font-size: 32px;
     max-width: 800px;
     bottom: 13pc;
+    left: 37.5pc;
 }
 
 p {
@@ -70,6 +71,8 @@ p {
     position: absolute;
     bottom: 10%;
     left: var(--portrait-position);
+    transform: translateX(30%);
+    transform: scaleX(-1);
     width: 30%;
     height: auto;
 }
