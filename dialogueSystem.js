@@ -591,8 +591,12 @@ let dialogue2 = [{
     type:"internal-text",
     location:"rooftop"
 }, {
-    dialogue: "Students gather at the courtyard, talking, eating, doing their normal lunch time routine. I look back to see if another student is sitting here. Ah, there is. Kageyama Miyu.",
+    dialogue: "Students gather at the courtyard, talking, eating, doing their normal lunch time routine.",
     type: "internal-text",
+    location: "rooftop"
+}, {
+    dialogue:"I look back to see if another student is sitting here. Ah, there is. Kageyama Miyu.",
+    type:"internal-text",
     location: "rooftop"
 }, {
     dialogue: "There’s no one else to talk to, so I walk over slowly, stopping at a short distance behind her.",
