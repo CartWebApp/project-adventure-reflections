@@ -170,8 +170,8 @@ button {
 }
 
 .ally {
-  top: 30rem;
-  left: 3rem;
+  top: 28rem;
+  left: 1.5rem;
 }
 
 .ally img {
@@ -257,7 +257,7 @@ button {
 }
 
 .menu-caption {
-  min-height: 1.4em;
+  height: 1.5em;
   color: #d5d5d5;
   font-size: clamp(1rem, 1.45vw, 1.2rem);
 }

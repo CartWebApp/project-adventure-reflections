@@ -288,7 +288,7 @@ let dialogue1 = [{
     type: "internal-text",
     location: "hallways"
 }, {
-    dialogue: "Takanaka Aiko. One of my friends, I mean, she’s friends with everyone anyways. I’m not sure why she is talking to me.",
+    dialogue: "Takamine Daichi.",
     type: "internal-text",
     location: "hallways"
 }, {
