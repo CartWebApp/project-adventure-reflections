@@ -1,4 +1,4 @@
-// let dialogue = [{ dialogue: "Hello!", emotion: "happy", type: "text", person: "Sadie", location: "club" }, { dialogue: "Sad Hello", emotion: "sad", type: "text", person: "Sadie", location: "room" }, { dialogue: "You see a trash can, sitting innocently in the corner, potentially hiding the secrets of the universe within its maw. It almost seems to taunt you.", type: "internal-text" }, { dialogue: "Check inside the trash can?", type: "choice", choices: ["HELL YEAH", "No, wtf are you on about??", "Third Test Choice"], results: [{ text: "You give into your urges; the <b>animalistic</b> desire to know what <em>exactly</em> was in that trash can...only to find nothing.", choice: "checkedTrashCan", value: 1 }, { text: "You didnt check the trash can...Good job", choice: "checkedTrashCan", value: 0 }] }];
+// let dialogue = [{ dialogue: "Hello!", emotion: "happy", type: "text", person: "Aiko", location: "club" }, { dialogue: "Sad Hello", emotion: "sad", type: "text", person: "Aiko", location: "room" }, { dialogue: "You see a trash can, sitting innocently in the corner, potentially hiding the secrets of the universe within its maw. It almost seems to taunt you.", type: "internal-text" }, { dialogue: "Check inside the trash can?", type: "choice", choices: ["HELL YEAH", "No, wtf are you on about??", "Third Test Choice"], results: [{ text: "You give into your urges; the <b>animalistic</b> desire to know what <em>exactly</em> was in that trash can...only to find nothing.", choice: "checkedTrashCan", value: 1 }, { text: "You didnt check the trash can...Good job", choice: "checkedTrashCan", value: 0 }] }];
 
 
 let dialogue0 = [{
@@ -17,7 +17,7 @@ let dialogue0 = [{
 }, {
     dialogue: "“Good morning… you walk fast, don’t you know that?”",
     type: "text",
-    person: "Sadie",
+    person: "Aiko",
     emotion: "happy",
     location: "hallways"
 }, {
@@ -35,7 +35,7 @@ let dialogue0 = [{
 }, {
     dialogue: "“I didn’t want to lose you in the crowd… I saw you from the gate,”",
     type: "text",
-    person: "Sadie",
+    person: "Aiko",
     emotion: "happy",
     location: "hallways"
 }, {
@@ -45,7 +45,7 @@ let dialogue0 = [{
 }, {
     dialogue: "“It gets… a bit overwhelming.”",
     type: "text",
-    person: "Sadie",
+    person: "Aiko",
     emotion: "sad",
     location: "hallways"
 }, {
@@ -69,7 +69,7 @@ let dialogue0 = [{
     type: "internal-text",
     location: "hallways"
 }, {
-    dialogue: "Sadie lets out a deep sigh. She thinks again before speaking.",
+    dialogue: "Aiko lets out a deep sigh. She thinks again before speaking.",
     type: "internal-text",
     location: "hallways"
 }, {
@@ -79,7 +79,7 @@ let dialogue0 = [{
 }, {
     dialogue: "“Hey Kagami, i’m a bit curious…”",
     type: "text",
-    person: "Sadie",
+    person: "Aiko",
     emotion: "happy",
     location: "hallways"
 }, {
@@ -89,7 +89,7 @@ let dialogue0 = [{
 }, {
     dialogue: "“Do you ever feel like everyone has things worked out?”",
     type: "text",
-    person: "Sadie",
+    person: "Aiko",
     emotion: "happy",
     location: "hallways"
 }, {
@@ -103,7 +103,7 @@ let dialogue0 = [{
 }, {
     dialogue: "“Ah… well I mean. I feel like everyone knows who they are and what they are doing.”",
     type: "text",
-    person: "Sadie",
+    person: "Aiko",
     emotion: "happy",
     location: "hallways"
 }, {
@@ -113,7 +113,7 @@ let dialogue0 = [{
 }, {
     dialogue: "“And… I notice that... you’re just following along.”",
     type: "text",
-    person: "Sadie",
+    person: "Aiko",
     emotion: "sad",
     location: "hallways"
 }, {
@@ -128,17 +128,17 @@ let dialogue0 = [{
     dialogue: "“Yeesh, that's harsh.”",
     type: "text",
     location: "hallways",
-    person: "Sadie",
+    person: "Aiko",
     emotion: "happy"
 }, {
-    dialogue: "Sadie clenches her teeth, considering my words for a moment.",
+    dialogue: "Aiko clenches her teeth, considering my words for a moment.",
     location: "hallways",
     type: "internal-text"
 }, {
     dialogue: "“I guess that’s a bit comforting.”",
     type: "text",
     location: "hallways",
-    person: "Sadie",
+    person: "Aiko",
     emotion: "happy"
 }, {
     dialogue: "We start walking towards the building together and head to our lockers to grab our papers out of them.",
@@ -155,13 +155,13 @@ let dialogue0 = [{
     person: "mom"
 }, {
     dialogue: "“But, I’ll be late too then…”",
-    person: "Sadie",
+    person: "Aiko",
     location: "hallways",
     emotion: "sad",
     type: "text"
 }, {
     dialogue: "“...”",
-    person: "Sadie",
+    person: "Aiko",
     location: "hallways",
     emotion: "sad",
     type: "text"
@@ -169,17 +169,17 @@ let dialogue0 = [{
     dialogue: "“Ah forget it, I’ll help you.”",
     type: "text",
     location: "hallways",
-    person: "Sadie",
+    person: "Aiko",
     emotion: "happy"
 }, {
-    dialogue: "Sadie looks back and smiles apologetically, whispering",
+    dialogue: "Aiko looks back and smiles apologetically, whispering",
     location: "hallways",
     type: "internal-text"
 }, {
     dialogue: "<em>“Sorry, I have to help.”</em>",
     type: "text",
     location: "hallways",
-    person: "Sadie",
+    person: "Aiko",
     emotion: "happy"
 }, {
     dialogue: "“You didn’t have to say yes,” I say.",
@@ -187,7 +187,7 @@ let dialogue0 = [{
     type: "internal-text"
 }, {
     dialogue: "“...”",
-    person: "Sadie",
+    person: "Aiko",
     location: "hallways",
     emotion: "happy",
     type: "text"
@@ -195,7 +195,7 @@ let dialogue0 = [{
     dialogue: "“I know…”",
     type: "text",
     location: "hallways",
-    person: "Sadie",
+    person: "Aiko",
     emotion: "happy"
 }, {
     dialogue: "Her face… her smile. It doesn’t look right. There’s something about her smile that just doesn’t feel right.",
@@ -205,7 +205,7 @@ let dialogue0 = [{
     dialogue: "What to do...",
     type: "choice",
     location: "hallways",
-    choices: ["Help Sadie", "Help reluctantly", "Stand back and watch."],
+    choices: ["Help Aiko", "Help reluctantly", "Stand back and watch."],
     results: [{
         text: "...",
         choice: "helpStudent",
@@ -231,7 +231,7 @@ let dialogue0 = [{
             dialogue: "“You didn’t need to… but thank you.”",
             type: "text",
             location: "hallways",
-            person: "Sadie",
+            person: "Aiko",
             emotion: "happy"
         }, {
             type: "internal-text",
@@ -248,7 +248,7 @@ let dialogue0 = [{
             dialogue: "“Your expression… thanks for helping me anyways.”",
             type: "text",
             location: "hallways",
-            person: "Sadie",
+            person: "Aiko",
             emotion: "sad"
         }, {
             dialogue: "We headed to class together shortly afterwards. I did help, but it’s not like I wanted to.",
@@ -288,7 +288,7 @@ let dialogue1 = [{
     type: "internal-text",
     location: "hallways"
 }, {
-    dialogue: "Takanaka Sadie. One of my friends, I mean, she’s friends with everyone anyways. I’m not sure why she is talking to me.",
+    dialogue: "Takanaka Aiko. One of my friends, I mean, she’s friends with everyone anyways. I’m not sure why she is talking to me.",
     type: "internal-text",
     location: "hallways"
 }, {
@@ -598,11 +598,11 @@ let dialogue2 = [{
 }, {
     dialogue: "“Good morning… you walk fast, don’t you know that?”",
     type: "text",
-    person: "Sadie",
+    person: "Aiko",
     emotion: "happy",
     location: "hallways"
 }, {
-    dialogue: "Takanaka Sadie. One of my friends, I mean, she’s friends with everyone anyways. I’m not sure why she is talking to me.",
+    dialogue: "Takanaka Aiko. One of my friends, I mean, she’s friends with everyone anyways. I’m not sure why she is talking to me.",
     type: "internal-text",
     location: "hallways"
 }, {
@@ -616,7 +616,7 @@ let dialogue2 = [{
 }, {
     dialogue: "“I didn’t want to lose you in the crowd… I saw you from the gate,”",
     type: "text",
-    person: "Sadie",
+    person: "Aiko",
     emotion: "happy",
     location: "hallways"
 }, {
@@ -626,7 +626,7 @@ let dialogue2 = [{
 }, {
     dialogue: "“It gets… a bit overwhelming.”",
     type: "text",
-    person: "Sadie",
+    person: "Aiko",
     emotion: "sad",
     location: "hallways"
 }, {
@@ -650,7 +650,7 @@ let dialogue2 = [{
     type: "internal-text",
     location: "hallways"
 }, {
-    dialogue: "Sadie lets out a deep sigh. She thinks again before speaking.",
+    dialogue: "Aiko lets out a deep sigh. She thinks again before speaking.",
     type: "internal-text",
     location: "hallways"
 }, {
@@ -660,7 +660,7 @@ let dialogue2 = [{
 }, {
     dialogue: "“Hey Kagami, i’m a bit curious…”",
     type: "text",
-    person: "Sadie",
+    person: "Aiko",
     emotion: "happy",
     location: "hallways"
 }, {
@@ -670,7 +670,7 @@ let dialogue2 = [{
 }, {
     dialogue: "“Do you ever feel like everyone has things worked out?”",
     type: "text",
-    person: "Sadie",
+    person: "Aiko",
     emotion: "happy",
     location: "hallways"
 }, {
@@ -684,7 +684,7 @@ let dialogue2 = [{
 }, {
     dialogue: "“Ah… well I mean. I feel like everyone knows who they are and what they are doing.”",
     type: "text",
-    person: "Sadie",
+    person: "Aiko",
     emotion: "happy",
     location: "hallways"
 }, {
@@ -694,7 +694,7 @@ let dialogue2 = [{
 }, {
     dialogue: "“And… I notice that... you’re just following along.”",
     type: "text",
-    person: "Sadie",
+    person: "Aiko",
     emotion: "sad",
     location: "hallways"
 }, {
@@ -709,17 +709,17 @@ let dialogue2 = [{
     dialogue: "“Yeesh, that's harsh.”",
     type: "text",
     location: "hallways",
-    person: "Sadie",
+    person: "Aiko",
     emotion: "happy"
 }, {
-    dialogue: "Sadie clenches her teeth, considering my words for a moment.",
+    dialogue: "Aiko clenches her teeth, considering my words for a moment.",
     location: "hallways",
     type: "internal-text"
 }, {
     dialogue: "“I guess that’s a bit comforting.”",
     type: "text",
     location: "hallways",
-    person: "Sadie",
+    person: "Aiko",
     emotion: "happy"
 }, {
     dialogue: "We start walking towards the building together and head to our lockers to grab our papers out of them.",
@@ -736,13 +736,13 @@ let dialogue2 = [{
     person: "mom"
 }, {
     dialogue: "“But, I’ll be late too then…”",
-    person: "Sadie",
+    person: "Aiko",
     location: "hallways",
     emotion: "sad",
     type: "text"
 }, {
     dialogue: "“...”",
-    person: "Sadie",
+    person: "Aiko",
     location: "hallways",
     emotion: "sad",
     type: "text"
@@ -750,17 +750,17 @@ let dialogue2 = [{
     dialogue: "“Ah forget it, I’ll help you.”",
     type: "text",
     location: "hallways",
-    person: "Sadie",
+    person: "Aiko",
     emotion: "happy"
 }, {
-    dialogue: "Sadie looks back and smiles apologetically, whispering",
+    dialogue: "Aiko looks back and smiles apologetically, whispering",
     location: "hallways",
     type: "internal-text"
 }, {
     dialogue: "<em>“Sorry, I have to help.”</em>",
     type: "text",
     location: "hallways",
-    person: "Sadie",
+    person: "Aiko",
     emotion: "happy"
 }, {
     dialogue: "“You didn’t have to say yes,” I say.",
@@ -768,7 +768,7 @@ let dialogue2 = [{
     type: "internal-text"
 }, {
     dialogue: "“...”",
-    person: "Sadie",
+    person: "Aiko",
     location: "hallways",
     emotion: "happy",
     type: "text"
@@ -776,7 +776,7 @@ let dialogue2 = [{
     dialogue: "“I know…”",
     type: "text",
     location: "hallways",
-    person: "Sadie",
+    person: "Aiko",
     emotion: "happy"
 }, {
     dialogue: "Her face… her smile. It doesn’t look right. There’s something about her smile that just doesn’t feel right.",
@@ -786,7 +786,7 @@ let dialogue2 = [{
     dialogue: "What to do...",
     type: "choice",
     location: "hallways",
-    choices: ["Help Sadie", "Help reluctantly", "Stand back and watch."],
+    choices: ["Help Aiko", "Help reluctantly", "Stand back and watch."],
     results: [{
         text: "...",
         choice: "helpStudent",
@@ -812,7 +812,7 @@ let dialogue2 = [{
             dialogue: "“You didn’t need to… but thank you.”",
             type: "text",
             location: "hallways",
-            person: "Sadie",
+            person: "Aiko",
             emotion: "happy"
         }, {
             type: "internal-text",
@@ -827,7 +827,7 @@ let dialogue2 = [{
             dialogue: "“Your expression… thanks for helping me anyways.”",
             type: "text",
             location: "hallways",
-            person: "Sadie",
+            person: "Aiko",
             emotion: "sad"
         }, {
             dialogue: "We headed to class together shortly afterwards. I did help, but it’s not like I wanted to.",
