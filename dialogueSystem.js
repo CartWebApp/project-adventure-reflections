@@ -583,221 +583,123 @@ let dialogue1 = [{
 
 
 let dialogue2 = [{
-    dialogue: "“---Kagami!”",
+    dialogue: "As I step onto the rooftop, the wind brushes lightly against my face, with my hair swaying in the wind. I look towards the bars at the edge and listen to the muffled voices of laughter and chatter from the students",
     type: "internal-text",
-    location: "hallways",
-    box: "e"
+    location: "rooftop"
 }, {
-    dialogue: "I scan through the sea of uniforms until I see her heading my way.",
+    dialogue: "Students gather at the courtyard, talking, eating, doing their normal lunch time routine. I look back to see if another student is sitting here. Ah, there is. Kageyama Miyu.",
     type: "internal-text",
-    location: "hallways"
+    location: "rooftop"
 }, {
-    dialogue: "She slows down, panting lightly, and puts her hand on her knees to catch her breath before standing back up with a bright smile.",
+    dialogue: "There’s no one else to talk to, so I walk over slowly, stopping at a short distance behind her.",
     type: "internal-text",
-    location: "hallways"
+    location: "rooftop"
 }, {
-    dialogue: "“Good morning… you walk fast, don’t you know that?”",
+    dialogue: "“...Do you always come up here?”",
+    type: "internal-text",
+    location: "rooftop"
+}, {
+    dialogue: "“Sometimes…”",
     type: "text",
-    person: "Aiko",
-    emotion: "happy",
-    location: "hallways"
+    location: "rooftop",
+    person:"Miyu",
+    emotion:"happy"
 }, {
-    dialogue: "Takanaka Aiko. One of my friends, I mean, she’s friends with everyone anyways. I’m not sure why she is talking to me.",
+    dialogue: "Her voice is quiet just like how the soft wind blows onto my face. It’s as if the wind blended in with her.",
     type: "internal-text",
-    location: "hallways"
+    location: "rooftop"
 }, {
-    dialogue: "“I didn’t think I was,” I replied. “You’re the one running.”",
-    type: "internal-text",
-    location: "hallways"
-}, {
-    dialogue: "She lets out a quiet laugh, brushing a strand of hair behind her ear.",
-    type: "internal-text",
-    location: "hallways"
-}, {
-    dialogue: "“I didn’t want to lose you in the crowd… I saw you from the gate,”",
+    dialogue: "“Look.”",
     type: "text",
-    person: "Aiko",
-    emotion: "happy",
-    location: "hallways"
+    location: "rooftop",
+    emotion:"happy",
+    person:"Miyu"
 }, {
-    dialogue: "She pauses.",
+    dialogue: "I look and see a group of students whispering to each other. Another stands off to the side, listening quietly to the group",
     type: "internal-text",
-    location: "hallways"
+    location: "rooftop"
 }, {
-    dialogue: "“It gets… a bit overwhelming.”",
+    dialogue: "“Can you tell? They’re talking about her.”",
     type: "text",
-    person: "Aiko",
-    emotion: "sad",
-    location: "hallways"
+    location: "rooftop",
+    emotion:"happy",
+    person:"Miyu"
 }, {
-    dialogue: "I look around at the students chatting, laughing, moving in groups.",
+    dialogue: "“Uh, you can tell that from here?”",
     type: "internal-text",
-    location: "hallways"
+    location: "rooftop"
 }, {
-    dialogue: "“I understand,”",
+    dialogue: "She slightly nods at me. ",
     type: "internal-text",
-    location: "hallways"
+    location: "rooftop"
 }, {
-    dialogue: "I pause.",
-    type: "internal-text",
-    location: "hallways"
-}, {
-    dialogue: "“I guess.”",
-    type: "internal-text",
-    location: "hallways"
-}, {
-    dialogue: "There’s a brief pause… not an awkward pause… Okay, maybe a bit awkward. No, probably just quiet. ",
-    type: "internal-text",
-    location: "hallways"
-}, {
-    dialogue: "Aiko lets out a deep sigh. She thinks again before speaking.",
-    type: "internal-text",
-    location: "hallways"
-}, {
-    dialogue: "She presses her fingers before asking.",
-    type: "internal-text",
-    location: "hallways"
-}, {
-    dialogue: "“Hey Kagami, i’m a bit curious…”",
+    dialogue: "The way they lean in, their body expressions, and their faces. I can just tell.”",
     type: "text",
-    person: "Aiko",
-    emotion: "happy",
-    location: "hallways"
+    location: "rooftop",
+    person:"Miyu",
+    emotion:"happy"
 }, {
-    dialogue: "“Huh? What is it?”",
+    dialogue: "I look again again, but closely this time. She’s right somehow. It does seem to be that way.",
     type: "internal-text",
-    location: "hallways"
+    location: "rooftop"
 }, {
-    dialogue: "“Do you ever feel like everyone has things worked out?”",
-    type: "text",
-    person: "Aiko",
-    emotion: "happy",
-    location: "hallways"
-}, {
-    dialogue: "I pause for a moment, thinking about what she said.",
+    dialogue: "“So what?”",
     type: "internal-text",
-    location: "hallways"
+    location: "rooftop"
 }, {
-    dialogue: "“I’m not sure if I understand what you’re asking.”",
+    dialogue: "Miyu turns her head slightly towards me.",
     type: "internal-text",
-    location: "hallways"
+    location: "rooftop"
 }, {
-    dialogue: "“Ah… well I mean. I feel like everyone knows who they are and what they are doing.”",
+    dialogue: "<em>“Nothing…”</em>",
     type: "text",
-    person: "Aiko",
-    emotion: "happy",
-    location: "hallways"
+    location: "rooftop",
+    person:"Miyu",
+    emotion:"happy"
 }, {
-    dialogue: "She hesitates before speaking up again.",
+    dialogue: "The wind picks up a little bit and the breeze pushes her hair in front of her face. Strangely, she doesn’t move or adjust it. She just lets it be",
     type: "internal-text",
-    location: "hallways"
+    location: "rooftop"
 }, {
-    dialogue: "“And… I notice that... you’re just following along.”",
-    type: "text",
-    person: "Aiko",
-    emotion: "sad",
-    location: "hallways"
-}, {
-    dialogue: "Her words linger through my mind. I recall back to the train.",
+    dialogue: "Her eyes return back to the students.",
     type: "internal-text",
-    location: "hallways"
+    location: "rooftop"
 }, {
-    dialogue: "“Maybe…” I say. “Or, they are just better at pretending.”",
+    dialogue: "“Most don’t pay attention...People say things without truly saying them to their face.”",
+    type: "text",
+    location: "rooftop",
+    person:"Miyu",
+    emotion:"happy"
+}, {
+    dialogue: "“Do you think it matters though?” I question her.",
     type: "internal-text",
-    location: "hallways"
+    location: "rooftop"
 }, {
-    dialogue: "“Yeesh, that's harsh.”",
-    type: "text",
-    location: "hallways",
-    person: "Aiko",
-    emotion: "happy"
-}, {
-    dialogue: "Aiko clenches her teeth, considering my words for a moment.",
-    location: "hallways",
-    type: "internal-text"
-}, {
-    dialogue: "“I guess that’s a bit comforting.”",
-    type: "text",
-    location: "hallways",
-    person: "Aiko",
-    emotion: "happy"
-}, {
-    dialogue: "We start walking towards the building together and head to our lockers to grab our papers out of them.",
+    dialogue: "She pauses for a moment. ",
     type: "internal-text",
-    location: "hallways"
+    location: "rooftop"
 }, {
-    dialogue: "On our way to class, we spot scattered papers on the floor with someone trying to pick them up. A group of students walk by, ignoring the student.",
-    type: "internal-text",
-    location: "hallways"
-}, {
-    dialogue: "“Hey, I apologize for asking but can you please help me pick up these papers? I might be late to class…”",
+    dialogue: "““It could…Or maybe not. “What do you think?”",
     type: "text",
-    location: "hallways",
-    person: "mom"
+    location: "rooftop",
+    person:"Miyu",
+    emotion:"happy"
 }, {
-    dialogue: "“But, I’ll be late too then…”",
-    person: "Aiko",
-    location: "hallways",
-    emotion: "sad",
-    type: "text"
-}, {
-    dialogue: "“...”",
-    person: "Aiko",
-    location: "hallways",
-    emotion: "sad",
-    type: "text"
-}, {
-    dialogue: "“Ah forget it, I’ll help you.”",
-    type: "text",
-    location: "hallways",
-    person: "Aiko",
-    emotion: "happy"
-}, {
-    dialogue: "Aiko looks back and smiles apologetically, whispering",
-    location: "hallways",
-    type: "internal-text"
-}, {
-    dialogue: "<em>“Sorry, I have to help.”</em>",
-    type: "text",
-    location: "hallways",
-    person: "Aiko",
-    emotion: "happy"
-}, {
-    dialogue: "“You didn’t have to say yes,” I say.",
-    location: "hallways",
-    type: "internal-text"
-}, {
-    dialogue: "“...”",
-    person: "Aiko",
-    location: "hallways",
-    emotion: "happy",
-    type: "text"
-}, {
-    dialogue: "“I know…”",
-    type: "text",
-    location: "hallways",
-    person: "Aiko",
-    emotion: "happy"
-}, {
-    dialogue: "Her face… her smile. It doesn’t look right. There’s something about her smile that just doesn’t feel right.",
-    type: "internal-text",
-    location: "hallways"
-}, {
-    dialogue: "What to do...",
+    dialogue: "What do i say...",
     type: "choice",
-    location: "hallways",
-    choices: ["Help Aiko", "Help reluctantly", "Stand back and watch."],
+    location: "rooftop",
+    choices: ["Speak up", "Ask for her thoughts", "Stay Silent."],
     results: [{
         text: "...",
-        choice: "helpStudent",
+        choice: "firstMiyuChoice",
         value: 0
     }, {
         text: "...",
-        choice: "helpStudent",
+        choice: "firstMiyuChoice",
         value: 1
     }, {
         text: "...",
-        choice: "helpStudent",
+        choice: "firstMiyuChoice",
         value: 2
     }]
 }, {
@@ -805,39 +707,73 @@ let dialogue2 = [{
     condition: "helpStudent",
     dialouge: [
         [{
-            dialogue: "I kneel on the floor and pick up papers with her. She looks at me with a faint smile and keeps picking them up as well.",
+            dialogue: "“Hmm…” I think for a moment. “We could say something, speak up for the student so that they could stop.”",
             type: "internal-text",
-            location: "hallways"
+            location: "rooftop"
         }, {
-            dialogue: "“You didn’t need to… but thank you.”",
+            dialogue: "Miyu smiles faintly, only for a second. That’s something I haven’t seen before. ",
+            type: "internal-text",
+            location: "rooftop"
+        }, {
             type: "text",
-            location: "hallways",
-            person: "Aiko",
+            dialogue: "“Good answer.”",
+            location: "rooftop",
+            person:"Miyu",
+            emotion:"happy"
+        }, {
+            type: "internal-text",
+            dialogue: "She packs up her bento box and gets up. She waves at me and heads out downstairs.",
+            location: "rooftop"
+        }, {
+            event:"endofDemo"
+        }],
+        [{
+            dialogue: "“What do you think we should do?”",
+            type: "internal-text",
+            location: "rooftop"
+        }, {
+            dialogue: "	“I’m not sure.”",
+            type: "text",
+            location: "rooftop",
+            person: "Miyu",
             emotion: "happy"
         }, {
+            dialogue: "For a short while, there was just silence. The only sounds I can hear are the wind blowing on my face and her munching.",
             type: "internal-text",
-            dialogue: "After we picked up the papers, we headed to class together. For some reason, she seemed a bit more happier than usual.",
-            location: "hallways"
+            location: "rooftop"
+        }, {
+            dialogue:"Quietly, we both watch the students from afar. Then, she packs up her bento box and gets up. She waves at me and heads out downstairs.",
+            type:"internal-text",
+            location:"rooftop"
+        }, {
+            event:"endofDemo"
         }],
         [{
-            dialogue: "I hesitated for a moment before helping her pick up the papers. I kneel down on the ground and pick up papers with her. Obscurely, she stares at my face.",
-            type: "internal-text",
-            location: "hallways"
-        }, {
-            dialogue: "“Your expression… thanks for helping me anyways.”",
+            dialogue: "“...”",
             type: "text",
-            location: "hallways",
-            person: "Aiko",
-            emotion: "sad"
+            location: "rooftop",
+            person:"Miyu",
+            emotion:"happy"
         }, {
-            dialogue: "We headed to class together shortly afterwards. I did help, but it’s not like I wanted to.",
+            dialogue: "“Don’t have anything to say?”",
+            type: "text",
+            location: "rooftop",
+            person:"Miyu",
+            emotion:"happy"
+        }, {
+            dialogue: "“Ah… well…” I speak up quietly.",
             type: "internal-text",
-            location: "hallways"
-        }],
-        [{
-            dialogue: "I stood back and just watched them. I feel as if a sharp gaze is piercing through my skull, but no one is actually looking or staring at me. Weird. Afterwards, we headed to class together.",
+            location: "rooftop"
+        }, {
+            dialogue: "“That’s okay too.”",
+            type: "text",
+            location: "rooftop",
+            person:"Miyu",
+            emotion:"happy"
+        },  {
+            dialogue: "I can sense a bit of her irritation at me, but she doesn’t seem to act like it. She finishes her lunch quietly and gets up to head downstairs.",
             type: "internal-text",
-            location: "hallways"
+            location: "rooftop"
         }, {
             event:"endofDemo"
         }]
